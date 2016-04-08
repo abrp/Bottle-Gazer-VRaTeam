@@ -2,14 +2,19 @@
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
-		GameObject items[];
-	// Use this for initialization
-	void Start () {
 	
+	[SerializeField] private GameObject[] m_items;
+	[SerializeField] private float m_spawnRate = 0.5f;
+	private float m_nextSpawnTime;
+
+	void Start () {
+		
 	}
 	
-	// Update is called once per frame
+
 	void Update () {
-	
+		if (m_nextSpawnTime > Time.time) {
+
+		}
 	}
 }
