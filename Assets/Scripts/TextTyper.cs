@@ -30,11 +30,10 @@ public class TextTyper : MonoBehaviour {
 
 	void Start(){
 		audioSource = GetComponent<AudioSource> ();
-		TypeTextOnScreen (2);
+		TypeTextOnScreen (0);
 	}
 
 	void Update(){
-
 	}
 
 	// Use this for initialization
