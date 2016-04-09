@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a29ab5aef478b364db9717f9f13575ac
-timeCreated: 1460241115
+guid: a7fbfcaf1b20e1645bc8c3c2839c698d
+timeCreated: 1460239324
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: carpet
+    4300000: Box007
   materials:
     importMaterials: 1
     materialName: 0

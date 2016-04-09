@@ -6,9 +6,9 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: chipboard
+  m_Name: ceiling
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _DETAIL_MULX2
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -19,7 +19,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: e82cf39a386526242a92d0c0fe189596, type: 3}
+          m_Texture: {fileID: 2800000, guid: 21d23c443b8053844ab174949f875d56, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -68,7 +68,7 @@ Material:
         first:
           name: _DetailAlbedoMap
         second:
-          m_Texture: {fileID: 2800000, guid: 8f96dffaf14df94459b1438898fb4454, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -135,4 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.588, g: 0.588, b: 0.588, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}

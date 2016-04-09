@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a29ab5aef478b364db9717f9f13575ac
-timeCreated: 1460241115
+guid: afc9f671d98a05c46bce01e94f451a43
+timeCreated: 1460240129
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: carpet
+    4300000: ceiling
   materials:
     importMaterials: 1
     materialName: 0
