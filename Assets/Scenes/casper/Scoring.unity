@@ -125,11 +125,7 @@ Prefab:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
-      propertyPath: m_items.Array.data[0]
-      value: 
-      objectReference: {fileID: 174838, guid: 8c75aedc9e1849d448bd4b9bef020184, type: 2}
-    - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
-      propertyPath: m_spawnRate
+      propertyPath: m_SpawnRate
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
