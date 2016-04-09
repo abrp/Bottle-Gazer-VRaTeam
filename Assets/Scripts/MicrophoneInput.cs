@@ -20,7 +20,7 @@ public class MicrophoneInput : MonoBehaviour   {
 	public float dbValue;             // Volume in DB
 	public float pitchValue;          // Pitch - Hz (is this frequency?)
 	private int blowingTime;           // How long each blow has lasted
-
+	public float sensitivity = 10;
 	private float lowPassResults;      // Low Pass Filter result
 	private float peakPowerForChannel; //
 
@@ -43,7 +43,7 @@ public class MicrophoneInput : MonoBehaviour   {
 
 	public void Update () {
 
-		// If the audio has stopped playing, this will restart the mic play the clip.
+		// If the audio has stopped plaing, this will restart the mic play the clip.
 		if (!audio.isPlaying) {
 			StartMicListener();
 		}
@@ -55,14 +55,17 @@ public class MicrophoneInput : MonoBehaviour   {
 		DeriveBlow();
 
 		//m_TestObject.transform.position = new Vector3 (0,dbValue,1.75f);
-		if (dbValue > 0) {
-			m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
+		if (dbValue < sensitivity) {
+			if (m_TestObject != null) {
+				m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
+			}
 			loud = false;
 		} else {
-			m_TestObject.GetComponent<Renderer> ().material.color = new Color (0, 1, 0);
+			if (m_TestObject != null) {
+				m_TestObject.GetComponent<Renderer> ().material.color = new Color (0, 1, 0);
+			}
 			loud = true;
 		}
-
 	}
 
 	/// Starts the Mic, and plays the audio back in (near) real-time.
