@@ -200,7 +200,9 @@ MonoBehaviour:
   m_Noise: {fileID: 8300000, guid: 7bb1f37acca398d48a3ba1f9c8ba3964, type: 3}
   m_AudioClips:
   - {fileID: 8300000, guid: 8316edec28db0f34f8bb83e8f83828ad, type: 3}
-  - {fileID: 8300000, guid: 9e2dfb4052ea0e94685ccb00e691a139, type: 3}
+  - {fileID: 8300000, guid: 68be0d4c779b76f4c86e6504f881bd39, type: 3}
+  - {fileID: 8300000, guid: 4ee8f1d81ce55de47aba0ccb3cb399e1, type: 3}
+  - {fileID: 8300000, guid: 2a42d03f4c0f8b74cb092769dd06ab92, type: 3}
   m_IsChanging: 0
 --- !u!1001 &100100000
 Prefab:
