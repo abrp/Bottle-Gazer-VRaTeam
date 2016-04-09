@@ -275,12 +275,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resultDisplay: {fileID: 0}
   blowDisplay: {fileID: 0}
-  recordedLength: 50
+  recordedLength: 1
   requiedBlowTime: 4
   clamp: 160
   rmsValue: 0
   dbValue: 0
   pitchValue: 0
+  m_TestObject: {fileID: 204656073}
+  loud: 0
 --- !u!82 &458889598
 AudioSource:
   m_ObjectHideFlags: 0

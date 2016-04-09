@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(AudioSource))]  
 public class MicrophoneInput : MonoBehaviour   {
 	private const int FREQUENCY = 48000;    // Wavelength, I think.
-	private const int SAMPLECOUNT = 256;   // Sample Count.
+	private const int SAMPLECOUNT = 1024;   // Sample Count.
 	private const float REFVALUE = 0.1f;    // RMS value for 0 dB.
 	private const float THRESHOLD = 0.02f;  // Minimum amplitude to extract pitch (recieve anything)
 	private const float ALPHA = 0.05f;      // The alpha for the low pass filter (I don't really understand this).
@@ -29,6 +29,8 @@ public class MicrophoneInput : MonoBehaviour   {
 	private List<float> dbValues;      // Used to average recent volume.
 	private List<float> pitchValues;   // Used to average recent pitch.
 	private new AudioSource audio;
+	[SerializeField] private GameObject m_TestObject;
+	public bool loud = false;
 
 	public void Start () {
 		samples = new float[SAMPLECOUNT];
@@ -52,11 +54,20 @@ public class MicrophoneInput : MonoBehaviour   {
 		// Runs a series of algorithms to decide whether a blow is occuring.
 		DeriveBlow();
 
+		//m_TestObject.transform.position = new Vector3 (0,dbValue,1.75f);
+		if (dbValue > -10) {
+			m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
+			loud = false;
+		} else {
+			m_TestObject.GetComponent<Renderer> ().material.color = new Color (0, 1, 0);
+			loud = true;
+		}
+
 	}
 
 	/// Starts the Mic, and plays the audio back in (near) real-time.
 	private void StartMicListener() {
-		audio.clip = Microphone.Start("Built-in Microphone", true, 256, FREQUENCY);
+		audio.clip = Microphone.Start("Built-in Microphone", true, 999, FREQUENCY);
 		// HACK - Forces the function to wait until the microphone has started, before moving onto the play function.
 		while (!(Microphone.GetPosition("Built-in Microphone") > 0)) {
 		} audio.Play();
