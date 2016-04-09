@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a29ab5aef478b364db9717f9f13575ac
-timeCreated: 1460241115
+guid: 268587806314e3c4db07c698c7a3c592
+timeCreated: 1460240914
 licenseType: Pro
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: carpet
+    4300000: conveyer hole
   materials:
     importMaterials: 1
     materialName: 0
