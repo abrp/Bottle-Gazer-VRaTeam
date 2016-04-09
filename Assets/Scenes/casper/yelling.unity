@@ -540,6 +540,11 @@ Prefab:
       propertyPath: m_Controllables.Array.data[3]
       value: 
       objectReference: {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
+    - target: {fileID: 8208844, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24369850, guid: 010b532b8d7be6a459e2cae8cefff9f6,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
   m_IsPrefabParent: 0
