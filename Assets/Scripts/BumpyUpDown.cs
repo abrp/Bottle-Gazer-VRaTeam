@@ -3,8 +3,8 @@ using System.Collections;
 
 public class BumpyUpDown : MonoBehaviour {
 
-	[SerializeField] private float m_Bumpyness = 0.02f;
-	[SerializeField] private float m_UpDownSkin = 0.3f;
+	[SerializeField] private float m_Bumpyness = 1f;
+	[SerializeField] private float m_UpDownSkin = 0.01f;
 
 	private float lowerBound;
 	private float upperBound;
