@@ -22,6 +22,7 @@ AudioMixerController:
     - 9a0dc417147afb74eae2f555015b5f99
     - 8b8531c6b508e334da928e22200e633a
     - 2aa19758e12ebb94bb071499717a20ad
+    - 21732d7ee598e304fb66eab4f58b772d
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500003}
@@ -39,6 +40,7 @@ AudioMixerGroupController:
   - {fileID: 24306104}
   - {fileID: 24392574}
   - {fileID: 24345726}
+  - {fileID: 24369850}
   m_Volume: b30d3741c7edaa44fa90303c1ecc1ac3
   m_Pitch: 01e8baa04aca9cf4687771fd95c8737c
   m_Effects:
@@ -98,6 +100,23 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!243 &24369850
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Input
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 21732d7ee598e304fb66eab4f58b772d
+  m_Children: []
+  m_Volume: b0b8913554964434783b5f1ac1fba46f
+  m_Pitch: 62d051003431f6e46b7a1f426268c39a
+  m_Effects:
+  - {fileID: 24439286}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &24376378
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -141,6 +160,19 @@ AudioMixerEffectController:
   m_EffectID: baf50d1e7abd83943b796088836367fd
   m_EffectName: Attenuation
   m_MixLevel: ced6ec5de649b9c49b30eb568d789cbe
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &24439286
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2c7f77dfba17f404d9daac22aef1373d
+  m_EffectName: Attenuation
+  m_MixLevel: fd6670b53a347e3468e0636f6d1c6026
   m_Parameters: []
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
@@ -222,5 +254,6 @@ AudioMixerSnapshotController:
     98b219a3db34dc24184258e4028f2a6e: -9.833286
     d89a955424f6885439f527fab565b79f: -14.816608
     49827b25319fb02459801e065ddd7a8f: -12.498478
+    b0b8913554964434783b5f1ac1fba46f: -16.191145
     cdf0dd0f89a14e544a68aa27928a9abb: -22.003613
   m_TransitionOverrides: {}

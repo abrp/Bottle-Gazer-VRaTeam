@@ -5,7 +5,5 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/abrp/abrp bottle gazer.unity
   - enabled: 1
-    path: Assets/Scenes/Final/Bottle Gazer.unity
+    path: Assets/Scenes/abrp/abrp bottle gazer.unity

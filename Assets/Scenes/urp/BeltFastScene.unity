@@ -124,6 +124,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 161912, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
+      propertyPath: m_Name
+      value: SpawnerBeltFast
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
+      propertyPath: m_SpawnRate
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
+      propertyPath: m_NumberOfSpawnItems.Array.data[1]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
+      propertyPath: m_NumberOfSpawnItems.Array.data[0]
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
   m_IsPrefabParent: 0
@@ -519,6 +535,14 @@ Prefab:
     - target: {fileID: 486854, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 102294, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
+      propertyPath: m_Name
+      value: TheBeltFast
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446536, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
+      propertyPath: scrollSpeed
+      value: -0.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eda57514783e9494db33b56f01a7bd55, type: 2}

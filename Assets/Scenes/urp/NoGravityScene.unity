@@ -134,14 +134,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11492586, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
-      propertyPath: m_Items.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11492586, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
-      propertyPath: m_NumberOfSpawnItems.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 499266, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1
@@ -182,18 +174,6 @@ Prefab:
       propertyPath: m_Items.Array.data[1]
       value: 
       objectReference: {fileID: 1707653927}
-    - target: {fileID: 11492586, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
-      propertyPath: m_NumberOfSpawnItems.Array.data[1]
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11492586, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
-      propertyPath: m_NumberOfSpawnItems.Array.data[0]
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11492586, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
-      propertyPath: m_SpawnRate
-      value: 0.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7edccea7cc8a7e3439eaac10dd7fe4e8, type: 2}
   m_IsPrefabParent: 0
