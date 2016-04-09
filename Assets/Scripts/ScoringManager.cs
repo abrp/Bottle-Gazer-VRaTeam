@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Collections;
 
 public class ScoringManager : MonoBehaviour {
 
   private int m_CurrentScore;
+  private Text m_ScoreText;
 
   [SerializeField] private int m_InitialScore = 1000;
 
@@ -33,12 +35,15 @@ public class ScoringManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
     m_CurrentScore = m_InitialScore;
+
+    m_ScoreText = this.GetComponentInChildren<Text>();
+    UpdateScoreText();
 	}
 
   public void ApplyScore(int score) {
     m_CurrentScore += score;
 
-    Debug.Log("Current score: " + m_CurrentScore);
+    UpdateScoreText();
 
     if (OnScoreChanged != null)
       OnScoreChanged();
@@ -64,5 +69,9 @@ public class ScoringManager : MonoBehaviour {
     if(scoringItem != null) {
       ApplyScore(scoringItem.GetEndOfBeltScore());
     }
+  }
+
+  private void UpdateScoreText() {
+    m_ScoreText.text = m_CurrentScore.ToString();
   }
 }
