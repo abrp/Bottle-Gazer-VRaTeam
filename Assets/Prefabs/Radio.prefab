@@ -196,9 +196,11 @@ MonoBehaviour:
   m_OverColor: {r: 1, g: 0, b: 0, a: 1}
   m_OutColor: {r: 0, g: 1, b: 0, a: 1}
   m_DebugState: 0
+  m_Noise: {fileID: 8300000, guid: 7bb1f37acca398d48a3ba1f9c8ba3964, type: 3}
   m_AudioClips:
   - {fileID: 8300000, guid: 8316edec28db0f34f8bb83e8f83828ad, type: 3}
   - {fileID: 8300000, guid: 9e2dfb4052ea0e94685ccb00e691a139, type: 3}
+  m_IsChanging: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
