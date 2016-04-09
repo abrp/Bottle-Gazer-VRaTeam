@@ -21,9 +21,10 @@ public class PushableItem : MonoBehaviour {
     
   void Push() {
     m_Rigibody.isKinematic = false;
-    //m_Rigibody.velocity = new Vector3(0, 0, m_Speed);
     var direction = this.transform.forward * m_Force;
     direction = m_sceneCamera.transform.TransformDirection(direction);
     m_Rigibody.AddForce(direction);
+
+    ScoringManager.instance.PlayerRemovedItem(this.gameObject);
   }
 }
