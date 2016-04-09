@@ -182,7 +182,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419852, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
       propertyPath: pauseTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
