@@ -4,8 +4,8 @@ using System.Collections.Generic;
 
 [RequireComponent(typeof(AudioSource))]  
 public class MicrophoneInput : MonoBehaviour   {
-	private const int FREQUENCY = 48000;    // Wavelength, I think.
-	private const int SAMPLECOUNT = 1024;   // Sample Count.
+	private const int FREQUENCY = 22000;    // Wavelength, I think.
+	private const int SAMPLECOUNT = 128;   // Sample Count.
 	private const float REFVALUE = 0.1f;    // RMS value for 0 dB.
 	private const float THRESHOLD = 0.02f;  // Minimum amplitude to extract pitch (recieve anything)
 	private const float ALPHA = 0.05f;      // The alpha for the low pass filter (I don't really understand this).
@@ -55,7 +55,7 @@ public class MicrophoneInput : MonoBehaviour   {
 		DeriveBlow();
 
 		//m_TestObject.transform.position = new Vector3 (0,dbValue,1.75f);
-		if (dbValue > -10) {
+		if (dbValue > 0) {
 			m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
 			loud = false;
 		} else {
