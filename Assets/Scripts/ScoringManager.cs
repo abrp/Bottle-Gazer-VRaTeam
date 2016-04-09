@@ -48,11 +48,21 @@ public class ScoringManager : MonoBehaviour {
     return m_CurrentScore;
   }
 
+  // Call this when player removes an item, ie. pushes a bottle off the belt
   public void PlayerRemovedItem(GameObject itemGameObject) {
     IScoringItem scoringItem = itemGameObject.GetComponent<IScoringItem>();
 
     if(scoringItem != null) {
       ApplyScore(scoringItem.GetPlayerRemovalScore());
+    }
+  }
+
+  // Call this when player removes an item, ie. pushes a bottle off the belt
+  public void ItemReachedEndOfBelt(GameObject itemGameObject) {
+    IScoringItem scoringItem = itemGameObject.GetComponent<IScoringItem>();
+
+    if(scoringItem != null) {
+      ApplyScore(scoringItem.GetEndOfBeltScore());
     }
   }
 }
