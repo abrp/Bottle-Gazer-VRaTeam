@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 494064}
   - 33: {fileID: 3365070}
   - 23: {fileID: 2379336}
-  - 64: {fileID: 6411472}
   - 114: {fileID: 11457360}
   m_Layer: 0
   m_Name: graphics
@@ -49,7 +48,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.645, y: 1.123, z: 0.4895866}
+  m_LocalPosition: {x: -0.040018745, y: -0.000000059604645, z: -0.13488297}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -117,18 +116,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &6411472
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134140}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 1
-  m_Mesh: {fileID: 4300000, guid: 604d8e0bc611ecd40b12872e4cfc5aa8, type: 3}
 --- !u!114 &11433368
 MonoBehaviour:
   m_ObjectHideFlags: 1

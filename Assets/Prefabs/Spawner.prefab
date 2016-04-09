@@ -42,8 +42,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Items:
   - {fileID: 174838, guid: 8c75aedc9e1849d448bd4b9bef020184, type: 2}
+  - {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
   m_SpawnRate: 2
-  m_NumberOfSpawnItems: 0a000000
+  m_NumberOfSpawnItems: 0a00000005000000
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
