@@ -9,19 +9,39 @@ ModelImporter:
     100002: Cube
     100004: Cylinder
     100006: Cylinder_010
+    100008: Belt
+    100010: BeltBase
+    100012: Legs
+    100014: Rail
     400000: //RootNode
     400002: Cube
     400004: Cylinder
     400006: Cylinder_010
+    400008: Belt
+    400010: BeltBase
+    400012: Legs
+    400014: Rail
     2300000: Cube
     2300002: Cylinder
     2300004: Cylinder_010
+    2300006: Belt
+    2300008: BeltBase
+    2300010: Legs
+    2300012: Rail
     3300000: Cube
     3300002: Cylinder
     3300004: Cylinder_010
+    3300006: Belt
+    3300008: BeltBase
+    3300010: Legs
+    3300012: Rail
     4300000: Cube
     4300002: Cylinder
     4300004: Cylinder_010
+    4300006: Belt
+    4300008: Rail
+    4300010: BeltBase
+    4300012: Legs
     7400000: Default Take
     9500000: //RootNode
   materials:
