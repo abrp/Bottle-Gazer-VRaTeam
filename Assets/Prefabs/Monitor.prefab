@@ -105,8 +105,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143286}
   m_LocalRotation: {x: 0.000000035262495, y: 0.976296, z: 0.21643963, w: -0.00000015905881}
-  m_LocalPosition: {x: -0, y: 0.75, z: 0.75}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.6}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_LocalEulerAnglesHint: {x: -25, y: 180, z: 0}
   m_Children:
   - {fileID: 481318}
@@ -222,7 +222,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -275,7 +275,7 @@ MonoBehaviour:
   clearScreen: 0
   animator: {fileID: 0}
   textComp: {fileID: 0}
-  message: 
+  message: Push Any Key ...
 --- !u!114 &11428640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -308,7 +308,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Woop Woop Woop Woop Woop Woop Woop Woop Woop Woop Woop Woop
+  m_Text: Push Any Key...
 --- !u!114 &11435060
 MonoBehaviour:
   m_ObjectHideFlags: 1

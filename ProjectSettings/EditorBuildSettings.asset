@@ -5,9 +5,25 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/abrp/abrp bottle gazer.unity
   - enabled: 1
     path: Assets/Scenes/SplashScreen/SplashScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/Day1Intermission.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Level 1 Intro.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/Day2Intermission.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Level 2 Speed Up.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/Day3Intermission.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Level 3 Dark.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/Day4Intermission.unity
+  - enabled: 1
+    path: Assets/Scenes/Final/Level 4 Day Off.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/Day5Intermission.unity
   - enabled: 1
     path: Assets/Scenes/Final/Level 5 Henry!.unity

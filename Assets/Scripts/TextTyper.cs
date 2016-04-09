@@ -14,18 +14,26 @@ public class TextTyper : MonoBehaviour {
 	public char clearScreen;
 	public Animator animator;
 	private bool isActive = true;
+	public static TextTyper instance = null;
 
 	//public string message;
 	public Text textComp;
 	public string message;
 
+	void Awake(){
+
+		if (instance == null)
+			instance = this;
+		else if (instance != this)
+			Destroy(gameObject);    
+	}
+
 	void Start(){
 		audioSource = GetComponent<AudioSource> ();
-		TypeTextOnScreen (2);
+		TypeTextOnScreen (0);
 	}
 
 	void Update(){
-
 	}
 
 	// Use this for initialization
