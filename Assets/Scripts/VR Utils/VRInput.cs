@@ -57,7 +57,6 @@ namespace VRStandardAssets.Utils
             {
                 // When Fire1 is pressed record the position of the mouse.
                 m_MouseDownPosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            
                 // If anything has subscribed to OnDown call it.
                 if (OnDown != null)
                     OnDown();
