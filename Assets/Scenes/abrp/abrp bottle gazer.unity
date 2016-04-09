@@ -512,6 +512,14 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.0423
       objectReference: {fileID: 0}
+    - target: {fileID: 494802, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 434660, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
   m_IsPrefabParent: 0
@@ -768,6 +776,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8250924857cdec14a99e3dc64291570b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OnColor: {r: 0, g: 0, b: 0, a: 0}
+  m_OffColor: {r: 0, g: 0, b: 0, a: 0}
+  delay: 1
+  audioClip: {fileID: 0}
 --- !u!114 &2059682549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,3 +791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8250924857cdec14a99e3dc64291570b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_OnColor: {r: 0, g: 0, b: 0, a: 0}
+  m_OffColor: {r: 0, g: 0, b: 0, a: 0}
+  delay: 1
+  audioClip: {fileID: 0}
