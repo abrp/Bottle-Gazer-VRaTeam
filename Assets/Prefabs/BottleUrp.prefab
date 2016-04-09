@@ -33,6 +33,7 @@ GameObject:
   - 114: {fileID: 11464516}
   - 114: {fileID: 11490238}
   - 114: {fileID: 11433368}
+  - 114: {fileID: 11497572}
   m_Layer: 0
   m_Name: BottleUrp
   m_TagString: Untagged
@@ -198,6 +199,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bumpyness: 1
   m_UpDownSkin: 0.01
+--- !u!114 &11497572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad9d4ede824641c7ba86215edb89a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
