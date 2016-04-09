@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/abrp/abrp bottle gazer.unity
   - enabled: 1
+    path: Assets/Scenes/SplashScreen/SplashScreen.unity
+  - enabled: 1
     path: Assets/Scenes/Final/Level 5 Henry!.unity

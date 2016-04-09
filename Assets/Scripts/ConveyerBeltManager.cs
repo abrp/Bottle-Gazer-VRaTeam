@@ -6,9 +6,12 @@ using System.Collections.Generic;
 public class ConveyerBeltManager : MonoBehaviour {
 
   [SerializeField] private GameObject[] m_Controllables;
+  [SerializeField, Range(0, 30)] private float m_MinStopGraceSeconds = 2f;
+  [SerializeField, Range(0, 30)] private float m_MaxStopGraceSeconds = 10f;
 
   private IList<IMotionControllable> m_MotionControllables;
   private MicrophoneInput m_MicrophoneInput;
+  private bool m_StoppingBelt = false;
 
 	// Use this for initialization
 	void Start () {      
@@ -18,7 +21,6 @@ public class ConveyerBeltManager : MonoBehaviour {
       var scripts = controllable.GetComponents<IMotionControllable>();
       foreach(var script in scripts) {
         m_MotionControllables.Add(script);
-        Debug.Log("Added script " + script.GetType().ToString());
       }
     }
  
@@ -28,19 +30,32 @@ public class ConveyerBeltManager : MonoBehaviour {
     m_MicrophoneInput.OnMicDeactivated += this.StopBelt;
 
     // Start with a stopped belt
-    this.StopBelt();
+    m_StoppingBelt = true;
+    this.CommitStopBelt();
 	}
 
   private void StartBelt() {
+    m_StoppingBelt = false;
     foreach(var controllable in CurrentMotionControllables()) {
       controllable.StartMotion();
     }
   }
 
   private void StopBelt() {
-    foreach(var controllable in CurrentMotionControllables()) {
-      Debug.Log("Stopping motion on " + controllable.GetType().ToString());
-      controllable.StopMotion();
+    if(!m_StoppingBelt) {
+      m_StoppingBelt = true;
+      var graceSeconds = Random.Range(m_MinStopGraceSeconds, m_MaxStopGraceSeconds);
+      Debug.Log("StopBelt. graceSeconds = " + graceSeconds);
+      Invoke("CommitStopBelt", graceSeconds);
+    }
+  }
+
+  private void CommitStopBelt() {
+    if(m_StoppingBelt) {
+      foreach(var controllable in CurrentMotionControllables()) {
+        controllable.StopMotion();
+      }  
+      m_StoppingBelt = false;
     }
   }
 
@@ -55,7 +70,6 @@ public class ConveyerBeltManager : MonoBehaviour {
       scriptList.AddRange(instance.GetComponentsInChildren<IMotionControllable>());
       foreach(var script in scriptList) {
         listCopy.Add(script);
-        Debug.Log("Added script " + script.GetType().ToString());
       }
     }
 
