@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Lig : MonoBehaviour {
+public class LightBulb : MonoBehaviour {
 
-	// Use this for initialization
+	private Color m_OnColor;
+	private Color m_OffColor;
+	private Renderer m_Renderer;
+	private float delay;
+
 	void Start () {
-	
+		m_Renderer = GetComponent<Renderer> ();
+		m_Renderer.material.color = m_OffColor;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void TurnOn(){
+		StartCoroutine (TurningOn ());
 	}
+
+	IEnumerator TurningOn(){
+		yield return new WaitForSeconds (delay);
+	}
+
+
 }

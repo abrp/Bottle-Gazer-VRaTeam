@@ -43,7 +43,7 @@ public class MicrophoneInput : MonoBehaviour   {
 
 	public void Update () {
 
-		// If the audio has stopped playing, this will restart the mic play the clip.
+		// If the audio has stopped plaing, this will restart the mic play the clip.
 		if (!audio.isPlaying) {
 			StartMicListener();
 		}
@@ -66,7 +66,6 @@ public class MicrophoneInput : MonoBehaviour   {
 			}
 			loud = true;
 		}
-
 	}
 
 	/// Starts the Mic, and plays the audio back in (near) real-time.
