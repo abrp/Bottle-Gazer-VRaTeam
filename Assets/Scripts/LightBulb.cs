@@ -3,21 +3,34 @@ using System.Collections;
 
 public class LightBulb : MonoBehaviour {
 
-	private Color m_OnColor;
-	private Color m_OffColor;
+	[SerializeField] private Color m_OnColor;
+	[SerializeField] private Color m_OffColor;
+
+	[SerializeField] private float delay = 1f;
+	[SerializeField] private AudioClip audioClip;
 	private Renderer m_Renderer;
-	private float delay;
+	private bool m_IsPlaying = false;
 
 	void Start () {
 		m_Renderer = GetComponent<Renderer> ();
 		m_Renderer.material.color = m_OffColor;
+		m_Renderer.material.SetColor("_EmissionColor",m_OffColor);
 	}
 
-	public void TurnOn(){
-		StartCoroutine (TurningOn ());
+	public void Play(){
+		//SoundManager.instance.Play (audioClip, transform.position, 0.9f, 1f, 1f);
+		if (!m_IsPlaying) {
+			StartCoroutine (TurnOn ());
+		}
 	}
 
-	IEnumerator TurningOn(){
+	IEnumerator TurnOn(){
+		m_IsPlaying = true;
+		m_Renderer.material.color = m_OnColor;
+		m_Renderer.material.SetColor("_EmissionColor",m_OnColor);
 		yield return new WaitForSeconds (delay);
+		m_Renderer.material.color = m_OffColor;
+		m_Renderer.material.SetColor("_EmissionColor",m_OffColor);
+		m_IsPlaying = false;
 	}
 }

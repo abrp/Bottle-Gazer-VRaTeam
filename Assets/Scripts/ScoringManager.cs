@@ -7,6 +7,8 @@ public class ScoringManager : MonoBehaviour {
 
   private int m_CurrentScore;
   private Text m_ScoreText;
+	[SerializeField] private LightBulb m_RedBulb;
+	[SerializeField] private LightBulb m_GreenBulb;
 
   [SerializeField] private int m_InitialScore = 1000;
 
@@ -44,6 +46,12 @@ public class ScoringManager : MonoBehaviour {
     m_CurrentScore += score;
 
     UpdateScoreText();
+
+		if (score > 0) {
+			m_GreenBulb.Play ();
+		} else {
+			m_RedBulb.Play ();
+		}
 
     if (OnScoreChanged != null)
       OnScoreChanged();
