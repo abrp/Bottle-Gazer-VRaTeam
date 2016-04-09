@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 486854}
   - 82: {fileID: 8208844}
-  - 114: {fileID: 11490988}
   - 114: {fileID: 11492186}
   m_Layer: 0
   m_Name: TheBelt
@@ -424,22 +423,6 @@ MonoBehaviour:
   m_ScrollSpeed: -0.011
   u: 0
   v: 1
---- !u!114 &11490988
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17340fb9c26d24654bdb83426c32571c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Controllables:
-  - {fileID: 111746}
-  - {fileID: 0}
-  m_MinStopGraceSeconds: 2
-  m_MaxStopGraceSeconds: 10
 --- !u!114 &11492186
 MonoBehaviour:
   m_ObjectHideFlags: 1
