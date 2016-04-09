@@ -1,4 +1,5 @@
-﻿using UnityEngine;  
+﻿using UnityEngine;
+using System;
 using System.Collections;  
 using System.Collections.Generic;
 
@@ -29,8 +30,13 @@ public class MicrophoneInput : MonoBehaviour   {
 	private List<float> dbValues;      // Used to average recent volume.
 	private List<float> pitchValues;   // Used to average recent pitch.
 	private new AudioSource audio;
-	[SerializeField] private GameObject m_TestObject;
-	public bool loud = false;
+
+  private bool loud = false;
+
+  [SerializeField] private GameObject m_TestObject;
+
+  public event Action OnMicActivated; // Called when input sound goes above treshold
+  public event Action OnMicDeactivated; // Called when input sound goes below treshold
 
 	public void Start () {
 		samples = new float[SAMPLECOUNT];
@@ -59,11 +65,17 @@ public class MicrophoneInput : MonoBehaviour   {
 			if (m_TestObject != null) {
 				m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
 			}
+      if(loud == true && OnMicActivated != null) {
+        OnMicActivated();
+      }
 			loud = false;
 		} else {
 			if (m_TestObject != null) {
 				m_TestObject.GetComponent<Renderer> ().material.color = new Color (0, 1, 0);
 			}
+      if(loud == false && OnMicDeactivated != null) {
+        OnMicDeactivated();
+      }
 			loud = true;
 		}
 	}
