@@ -49,13 +49,10 @@ public class ScoringManager : MonoBehaviour {
   }
 
   public void PlayerRemovedItem(GameObject itemGameObject) {
-    RightItem rightItem = itemGameObject.GetComponent<RightItem>();
-    WrongItem wrongItem = itemGameObject.GetComponent<WrongItem>();
+    IScoringItem scoringItem = itemGameObject.GetComponent<IScoringItem>();
 
-    if(rightItem != null) {
-      ApplyScore(rightItem.GetScore());
-    } else if(wrongItem != null) {
-      ApplyScore(wrongItem.GetScore());
+    if(scoringItem != null) {
+      ApplyScore(scoringItem.GetPlayerRemovalScore());
     }
   }
 }
