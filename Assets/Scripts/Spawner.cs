@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Spawner : MonoBehaviour {
+public class Spawner : MonoBehaviour, IMotionControllable {
 
 	[SerializeField] private GameObject[] m_Items;
 	[SerializeField] private float m_SpawnRate = 0.5f;
@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour {
 	private float m_NextSpawnTime;
 	private int[] m_PermutationTable;
 	private int m_CurrentNumberOfItems = 0;	// size 20
+  private bool m_IsSpawning = true;
 
 	void Start () {
 		SetupPermutationTable ();
@@ -53,7 +54,7 @@ public class Spawner : MonoBehaviour {
 
 
 	void Update () {
-		if (m_NextSpawnTime < Time.time) {
+    if (m_IsSpawning && m_NextSpawnTime < Time.time) {
 			if (m_CurrentNumberOfItems > 0) {
 
 				Instantiate (m_Items [m_PermutationTable [--m_CurrentNumberOfItems]], transform.position, Quaternion.identity);
@@ -63,5 +64,16 @@ public class Spawner : MonoBehaviour {
 			}
 		}
 	}
+
+  // Sets the object in motion
+  public void StartMotion() {
+    m_IsSpawning = true;
+  }
+
+  // Halts the object motion
+  public void StopMotion() {
+    m_IsSpawning = false;
+  }
+
 }
 

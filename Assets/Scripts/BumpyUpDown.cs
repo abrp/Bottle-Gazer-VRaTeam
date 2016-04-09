@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BumpyUpDown : MonoBehaviour {
+public class BumpyUpDown : MonoBehaviour, IMotionControllable {
 
 	[SerializeField] private float m_Bumpyness = 1f;
 	[SerializeField] private float m_UpDownSkin = 0.01f;
@@ -10,6 +10,7 @@ public class BumpyUpDown : MonoBehaviour {
 	private float upperBound;
 	private float force;
 	private Vector3 velocity = new Vector3 (0, 0, 0);	// private float Speed;
+  private bool m_IsInMotion = true;
 
 	private Rigidbody m_Rigidbody;
 	private Collider m_Collider;
@@ -37,7 +38,7 @@ public class BumpyUpDown : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (m_Rigidbody.isKinematic) {
+    if (m_IsInMotion && m_Rigidbody.isKinematic) {
 
 			// Add bumpyness
 			if (transform.position.y < lowerBound) {
@@ -54,4 +55,15 @@ public class BumpyUpDown : MonoBehaviour {
 			transform.Translate (velocity * Time.deltaTime);
 		}
 	}
+
+  // Sets the object in motion
+  public void StartMotion() {
+    m_IsInMotion = true;
+  }
+
+  // Halts the object motion
+  public void StopMotion() {
+    m_IsInMotion = false;
+  }
+
 }
