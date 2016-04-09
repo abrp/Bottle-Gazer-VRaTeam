@@ -19,6 +19,7 @@ public class PushableItem : MonoBehaviour {
     
   void Push() {
     m_Rigibody.isKinematic = false;
-    m_Rigibody.velocity = new Vector3(0, 0, m_Speed);
+    //m_Rigibody.velocity = new Vector3(0, 0, m_Speed);
+    m_Rigibody.AddForce(0, 0, m_Speed);
   }
 }

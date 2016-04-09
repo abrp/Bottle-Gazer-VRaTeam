@@ -30,7 +30,7 @@ public class BumpyUpDown : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//if (m_Rigidbody.isKinematic) {
+		if (m_Rigidbody.isKinematic) {
 			
 			Vector3 velocity = new Vector3 (0, 0, 0);
 
@@ -45,5 +45,5 @@ public class BumpyUpDown : MonoBehaviour {
 			// Move the bottle
 			transform.Translate (velocity * Time.deltaTime);
 		}
-	//}
+	}
 }
