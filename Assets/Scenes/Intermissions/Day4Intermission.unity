@@ -170,7 +170,8 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467608, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
       propertyPath: m_Text
-      value: Day 4
+      value: 'D\\\a\\y 4: \Con\\gra\\\tul\a\\\ti\\on\s! W\\ill\\\ be\\ a\\ bu\s\\y
+        da\y, so\\ ge\\\\t t\\\\\o it'
       objectReference: {fileID: 0}
     - target: {fileID: 11467608, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
       propertyPath: m_FontData.m_FontSize
@@ -182,7 +183,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11419852, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
       propertyPath: pauseTime
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d0e5b71b929d9745829b11048d96472, type: 2}
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c633d69fd5f7a14f8639ee0c3378269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Time: 5
+  m_Time: 6
 --- !u!1 &1804034391
 GameObject:
   m_ObjectHideFlags: 0

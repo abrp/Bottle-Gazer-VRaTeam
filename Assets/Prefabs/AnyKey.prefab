@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2356244}
   - 95: {fileID: 9513046}
   - 65: {fileID: 6589620}
+  - 114: {fileID: 11445756}
   m_Layer: 0
   m_Name: AnyKey
   m_TagString: Untagged
@@ -25,10 +26,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181870}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.89439875, y: -0.00000022233756, z: 0.98664814}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5000001, w: 0.49999994}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0.524}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,6 +95,28 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11445756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fa16ca272f3db47aa76b2ecdfd63f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractiveItem: {fileID: 0}
+  m_DebugState: 0
+  m_OverColor: {r: 1, g: 0, b: 0, a: 1}
+  m_OutColor: {r: 0, g: 1, b: 0, a: 1}
+  m_Strings:
+  - Push Any Key...
+  - Welcome to The New iKeyAnyKey ...
+  - One Key for everything!
+  - 'New job offer available: watch paint dry!'
+  - Push button to Flush Toilet!
+  - Push button to order running Sushi!
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
