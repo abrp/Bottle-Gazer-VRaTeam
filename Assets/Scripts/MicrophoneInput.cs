@@ -65,16 +65,16 @@ public class MicrophoneInput : MonoBehaviour   {
 			if (m_TestObject != null) {
 				m_TestObject.GetComponent<Renderer> ().material.color = new Color (1, 0, 0);
 			}
-      if(loud == true && OnMicActivated != null) {
-        OnMicActivated();
+      if(loud == true && OnMicDeactivated != null) {
+        OnMicDeactivated();
       }
 			loud = false;
 		} else {
 			if (m_TestObject != null) {
 				m_TestObject.GetComponent<Renderer> ().material.color = new Color (0, 1, 0);
 			}
-      if(loud == false && OnMicDeactivated != null) {
-        OnMicDeactivated();
+      if(loud == false && OnMicActivated != null) {
+        OnMicActivated();
       }
 			loud = true;
 		}

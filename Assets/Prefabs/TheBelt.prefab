@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 453748}
   - 33: {fileID: 3303202}
   - 23: {fileID: 2349016}
-  - 114: {fileID: 11446536}
+  - 114: {fileID: 11464092}
   m_Layer: 0
   m_Name: Belt
   m_TagString: Untagged
@@ -409,7 +409,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11446536
+--- !u!114 &11464092
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -417,10 +417,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 111746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91036c637cecf6247bd06620c5205241, type: 3}
+  m_Script: {fileID: 11500000, guid: e3032125740964afb8a8a2897bd204e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: -0.011
+  m_ScrollSpeed: -0.011
   u: 0
   v: 1
 --- !u!114 &11490988
