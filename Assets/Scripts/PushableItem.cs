@@ -29,6 +29,7 @@ public class PushableItem : MonoBehaviour {
     m_Rigibody.AddForce(direction);
 
     ScoringManager.instance.PlayerRemovedItem(this.gameObject);
+    LevelManager.instance.BeltItemRemoved(this.gameObject.GetComponent<BeltItem>());
   }
 
   void OnCollisionEnter() {
