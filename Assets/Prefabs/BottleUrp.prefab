@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3365070}
   - 23: {fileID: 2379336}
   - 64: {fileID: 6411472}
+  - 114: {fileID: 11457360}
   m_Layer: 0
   m_Name: graphics
   m_TagString: Untagged
@@ -33,6 +34,7 @@ GameObject:
   - 114: {fileID: 11464516}
   - 114: {fileID: 11490238}
   - 114: {fileID: 11433368}
+  - 114: {fileID: 11497572}
   m_Layer: 0
   m_Name: BottleUrp
   m_TagString: Untagged
@@ -47,7 +49,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.608, y: 1.117, z: 0.753}
+  m_LocalPosition: {x: -0.654, y: 1.207, z: 0.737}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -162,6 +164,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b4adc357e004ca4af28496b27ef338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11457360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14fce58d9af93694d8af802f1dac52d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_speed: 200
+  m_direction: {x: 0, y: 0, z: -1}
 --- !u!114 &11461560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +213,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Bumpyness: 1
   m_UpDownSkin: 0.01
+--- !u!114 &11497572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad9d4ede824641c7ba86215edb89a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
