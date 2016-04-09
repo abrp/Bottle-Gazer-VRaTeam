@@ -20,6 +20,4 @@ public class LightBulb : MonoBehaviour {
 	IEnumerator TurningOn(){
 		yield return new WaitForSeconds (delay);
 	}
-
-
 }
