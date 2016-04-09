@@ -38,11 +38,24 @@ public class ScoringManager : MonoBehaviour {
   public void ApplyScore(int score) {
     m_CurrentScore += score;
 
+    Debug.Log("Current score: " + m_CurrentScore);
+
     if (OnScoreChanged != null)
       OnScoreChanged();
   }
 
   public int GetCurrentScore() {
     return m_CurrentScore;
+  }
+
+  public void PlayerRemovedItem(GameObject itemGameObject) {
+    RightItem rightItem = itemGameObject.GetComponent<RightItem>();
+    WrongItem wrongItem = itemGameObject.GetComponent<WrongItem>();
+
+    if(rightItem != null) {
+      ApplyScore(rightItem.GetScore());
+    } else if(wrongItem != null) {
+      ApplyScore(wrongItem.GetScore());
+    }
   }
 }
