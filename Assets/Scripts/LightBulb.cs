@@ -18,7 +18,7 @@ public class LightBulb : MonoBehaviour {
 	}
 
 	public void Play(){
-		//SoundManager.instance.Play (audioClip, transform.position, 0.9f, 1f, 1f);
+		SoundManager.instance.Play (audioClip, transform.position, 0.9f, 1f);
 		if (!m_IsPlaying) {
 			StartCoroutine (TurnOn ());
 		}
