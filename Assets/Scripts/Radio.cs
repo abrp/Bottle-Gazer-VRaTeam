@@ -28,16 +28,13 @@ public class Radio : MonoBehaviour {
 		m_Renderer = GetComponent<Renderer> ();
 		m_AudioScource = GetComponent<AudioSource> ();
 
-		currentTrack = 0;
+		currentTrack = Random.Range (0, m_AudioClips.Length);
 		m_AudioScource.clip = m_AudioClips[currentTrack];
 		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
 		m_AudioScource.Play ();
 
 	}
-
-
-
-
+		
 	private void OnEnable(){
 		m_InteractiveItem.OnOver += HandleOver;
 		m_InteractiveItem.OnOut += HandleOut;
