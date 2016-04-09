@@ -2,7 +2,27 @@ fileFormatVersion: 2
 guid: 39c4952da76ef2141b5fea004ae66989
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: leg-1L
+    100006: leg-1R
+    100008: leg-2L
+    100010: leg-2R
+    100012: neck
+    100014: root
+    100016: spine
+    400000: Armature
+    400002: //RootNode
+    400004: leg-1L
+    400006: leg-1R
+    400008: leg-2L
+    400010: leg-2R
+    400012: neck
+    400014: root
+    400016: spine
+    7400000: Default Take
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3

@@ -3,7 +3,29 @@ guid: 09647c3a3705fa1489466aaeab01a7c9
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: chicken
+    100006: leg-1L
+    100008: leg-1R
+    100010: leg-2L
+    100012: leg-2R
+    100014: neck
+    100016: root
+    100018: spine
+    400000: Armature
+    400002: //RootNode
+    400004: chicken
+    400006: leg-1L
+    400008: leg-1R
+    400010: leg-2L
+    400012: leg-2R
+    400014: neck
+    400016: root
+    400018: spine
     4300000: chicken
+    11100000: //RootNode
+    13700000: chicken
   materials:
     importMaterials: 1
     materialName: 3
