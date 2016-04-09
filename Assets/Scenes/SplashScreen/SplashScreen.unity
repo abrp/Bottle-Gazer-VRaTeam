@@ -649,6 +649,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 309674949}
   m_RootOrder: 4
+--- !u!1001 &892760063
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 457044, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1054275336
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +804,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1233787771}
   - 114: {fileID: 1233787770}
-  - 114: {fileID: 1233787769}
   m_Layer: 0
   m_Name: CameraContainerInterMission
   m_TagString: Untagged
@@ -770,18 +811,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1233787769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1233787768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b1594bef3f74f6d8f352569a6be60e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_LevelDelays: 
 --- !u!114 &1233787770
 MonoBehaviour:
   m_ObjectHideFlags: 0
