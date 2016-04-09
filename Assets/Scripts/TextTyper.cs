@@ -42,9 +42,6 @@ public class TextTyper : MonoBehaviour {
 	
 	IEnumerator TypeText (string message, float delay) {
 		yield return new WaitForSeconds (delay);
-		audioSource.clip = noticationStart;
-		audioSource.Play ();
-		yield return new WaitForSeconds (0.5f);
 		foreach (char letter in message.ToCharArray()) {
 			audioSource.clip = writerSound;
 			if (letter == pauseChar) {
@@ -65,8 +62,6 @@ public class TextTyper : MonoBehaviour {
 			yield return new WaitForSeconds (letterPause);
 		}
 		yield return new WaitForSeconds (0.5f);
-		audioSource.clip = noticationEnd;
-		audioSource.Play ();
 	}
 }
 
