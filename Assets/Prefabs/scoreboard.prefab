@@ -61,6 +61,7 @@ GameObject:
   - 4: {fileID: 463390}
   - 33: {fileID: 3313214}
   - 23: {fileID: 2329874}
+  - 114: {fileID: 11425806}
   m_Layer: 0
   m_Name: GreenLight
   m_TagString: Untagged
@@ -112,6 +113,7 @@ GameObject:
   - 4: {fileID: 414358}
   - 33: {fileID: 3387966}
   - 23: {fileID: 2384852}
+  - 114: {fileID: 11434450}
   m_Layer: 0
   m_Name: RedLight
   m_TagString: Untagged
@@ -447,6 +449,36 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 1000
+--- !u!114 &11425806
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 156404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8250924857cdec14a99e3dc64291570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnColor: {r: 0.27450982, g: 1, b: 0.9333334, a: 0}
+  m_OffColor: {r: 0.046388406, g: 0.19117647, b: 0.17787164, a: 0}
+  delay: 0.1
+  audioClip: {fileID: 8300000, guid: a2d1a60f4621b464996cb0fad192ce9c, type: 3}
+--- !u!114 &11434450
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8250924857cdec14a99e3dc64291570b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OnColor: {r: 1, g: 0, b: 0, a: 0}
+  m_OffColor: {r: 0.12068967, g: 0, b: 0, a: 0}
+  delay: 0.1
+  audioClip: {fileID: 8300000, guid: 09f7e7c6438760748b3903c729d777dd, type: 3}
 --- !u!114 &11454148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -495,6 +527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807cad93e6db74a31ba9353126548f88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_RedBulb: {fileID: 11434450}
+  m_GreenBulb: {fileID: 11425806}
   m_InitialScore: 1000
 --- !u!222 &22285700
 CanvasRenderer:

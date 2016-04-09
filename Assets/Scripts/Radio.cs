@@ -6,6 +6,7 @@ public class Radio : MonoBehaviour {
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 	[SerializeField] private Color m_OverColor = new Color(1,0,0);
 	[SerializeField] private Color m_OutColor = new Color(0,1,0);
+	[SerializeField] private bool m_DebugState= false;
 
 	[SerializeField] private AudioClip[] m_AudioClips;
 
@@ -14,6 +15,7 @@ public class Radio : MonoBehaviour {
 	private Renderer m_Renderer;
 	private bool m_GazeOver;
 
+	private int currentTrack = 0;
 
 	private void Awake(){
 		if (m_InteractiveItem == null) {
@@ -25,7 +27,9 @@ public class Radio : MonoBehaviour {
 		m_Renderer = GetComponent<Renderer> ();
 		m_AudioScource = GetComponent<AudioSource> ();
 
-		m_AudioScource.clip = m_AudioClips[0];
+		currentTrack = 0;
+		m_AudioScource.clip = m_AudioClips[currentTrack];
+		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
 		m_AudioScource.Play ();
 
 	}
@@ -41,15 +45,27 @@ public class Radio : MonoBehaviour {
 
 	private void changeRadioStation() {
 		// Do something
+		currentTrack++;
+		currentTrack %= m_AudioClips.Length;
+		Debug.Log("Click on radio: currentTrack = " + currentTrack);
+		m_AudioScource.Stop ();
+		m_AudioScource.clip = m_AudioClips[currentTrack];
+		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
+		m_AudioScource.Play ();
+
 	}
 
 	private void HandleOver(){
-		m_Renderer.material.color = m_OverColor;
+		if (m_DebugState) {
+			m_Renderer.material.color = m_OverColor;
+		}
 		m_GazeOver = true;
 	}
 
 	private void HandleOut(){
-		m_Renderer.material.color = m_OutColor;
+		if (m_DebugState) {
+			m_Renderer.material.color = m_OutColor;
+		}
 		m_GazeOver = false;
 	}
 }
