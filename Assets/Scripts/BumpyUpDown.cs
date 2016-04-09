@@ -22,10 +22,12 @@ public class BumpyUpDown : MonoBehaviour {
 		lowerBound = transform.position.y;
 		upperBound = transform.position.y+m_UpDownSkin;
 
+		/*
 		Debug.Log (" collider = " + m_Collider.transform.position.y);
 		Debug.Log (" transform = " + transform.position.y);
 		Debug.Log (" lowerBound = " + lowerBound);
 		Debug.Log (" lowerBound = " + upperBound);
+		*/
 
 		force = 0f;
 		velocity = new Vector3 (0, 0, 0);

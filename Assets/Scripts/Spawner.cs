@@ -43,9 +43,11 @@ public class Spawner : MonoBehaviour {
 			m_PermutationTable [j] = k;
 		}
 
+		/*
 		for(int n = 0; n < m_CurrentNumberOfItems; n++){
 			Debug.Log (m_PermutationTable [n]);
 		}
+		*/
 	}
 
 
