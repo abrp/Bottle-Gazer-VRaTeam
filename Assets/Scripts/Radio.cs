@@ -29,6 +29,7 @@ public class Radio : MonoBehaviour {
 
 		currentTrack = 0;
 		m_AudioScource.clip = m_AudioClips[currentTrack];
+		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
 		m_AudioScource.Play ();
 
 	}
@@ -49,6 +50,7 @@ public class Radio : MonoBehaviour {
 		Debug.Log("Click on radio: currentTrack = " + currentTrack);
 		m_AudioScource.Stop ();
 		m_AudioScource.clip = m_AudioClips[currentTrack];
+		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
 		m_AudioScource.Play ();
 
 	}
