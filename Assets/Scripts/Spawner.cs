@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour {
 	[SerializeField] private GameObject[] m_Items;
 	[SerializeField] private float m_SpawnRate = 0.5f;
 	[SerializeField] private int[] m_NumberOfSpawnItems; // size
+	[SerializeField] private float m_Spawnfactor = 0.5f;
 	private float m_NextSpawnTime;
 	private int[] m_PermutationTable;
 	private int m_CurrentNumberOfItems = 0;	// size 20
@@ -56,7 +57,7 @@ public class Spawner : MonoBehaviour {
 			if (m_CurrentNumberOfItems > 0) {
 
 				Instantiate (m_Items [m_PermutationTable [--m_CurrentNumberOfItems]], transform.position, Quaternion.identity);
-				m_NextSpawnTime = Time.time + m_SpawnRate;
+				m_NextSpawnTime = Time.time + (Random.Range(m_SpawnRate,m_SpawnRate * m_Spawnfactor)) ;
 				//m_CurrentNumberOfItems--;
 
 			}

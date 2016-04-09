@@ -134,7 +134,7 @@ Prefab:
       objectReference: {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
     - target: {fileID: 11411548, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
       propertyPath: m_SpawnRate
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d379db40be9a91a4795aa2e5c3570f46, type: 2}
@@ -569,22 +569,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eda57514783e9494db33b56f01a7bd55, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1579772493 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 149892, guid: 65dd2499b00fa044d9dfd4cee93b35c0, type: 2}
-  m_PrefabInternal: {fileID: 1625711570}
---- !u!114 &1579772501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1579772493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 100cdc50f1e2a434cb8188030e3b86bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AudioClip: {fileID: 8300000, guid: d2256020490dba94d9648ed0ddbd7f4d, type: 3}
 --- !u!1001 &1625711570
 Prefab:
   m_ObjectHideFlags: 0
