@@ -16,7 +16,6 @@ public class AnyKey : MonoBehaviour {
 	[SerializeField] private string[] m_Strings;
 	private int m_currentString = 0;
 
-
 	private Renderer m_Renderer;
 	private bool m_GazeOver;
 
@@ -28,7 +27,8 @@ public class AnyKey : MonoBehaviour {
 
 	private void Start(){
 		m_Renderer = GetComponent<Renderer> ();
-		m_currentString = 0;
+		m_currentString = -1;
+		DisplayNexMessage ();
 		TimeForNextMessage = Time.time + m_DelayTime;
 	}
 
