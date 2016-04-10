@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   threshold: 0.15
-  intensity: 1.25
+  intensity: 0.83
   blurSize: 1
   blurIterations: 1
   blurType: 0
