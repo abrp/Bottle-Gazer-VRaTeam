@@ -13,9 +13,11 @@ public class MouseControlledEditorCamera : MonoBehaviour {
 
 	private void Update()
 	{
+		#if UNITY_EDITOR || !UNITY_ANDROID
 		Vector2 delta = new Vector2(Input.GetAxis("Mouse X") * m_sensitivityX,Input.GetAxis("Mouse Y") * m_sensitivityY);
 		ChangeHeading(delta.x);
 		ChangePitch(-delta.y);
+		#endif
 	}
 
 	private void ChangeHeading(float newHeading){

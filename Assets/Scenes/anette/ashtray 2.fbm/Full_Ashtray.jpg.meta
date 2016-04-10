@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< 2cf4e99d52a9221abdacded15806af5086fe49ef
-guid: b039d206df7479b418eacfbbc96e848f
-timeCreated: 1460280858
-licenseType: Pro
-=======
-guid: 82355b2412d794f4a9b052f8688beae3
-timeCreated: 1460281201
+guid: ff8c5826beccf44539c9521bc0862f3c
+timeCreated: 1460281477
 licenseType: Free
->>>>>>> Added missing meta files
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
