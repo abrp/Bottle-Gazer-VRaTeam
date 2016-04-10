@@ -324,30 +324,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_SpawnRate
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_NumberOfSpawnItems.Array.data[1]
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_Items.Array.data[0]
-      value: 
-      objectReference: {fileID: 174838, guid: a7554e9d576f80c48aed27f2d679de36, type: 2}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_Items.Array.data[1]
-      value: 
-      objectReference: {fileID: 128706, guid: 0a9890e0d2e1ff642aa765156d3f4d14, type: 2}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_Items.Array.data[2]
-      value: 
-      objectReference: {fileID: 148344, guid: 1babaa3fedcd1a243b3a77c187812494, type: 2}
-    - target: {fileID: 11452422, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
-      propertyPath: m_Items.Array.data[3]
-      value: 
-      objectReference: {fileID: 127422, guid: 5288fed36e9950e4a82dc06b5ce094c4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69b27a1d287ee794e9ed997367d8d9df, type: 2}
   m_IsPrefabParent: 0

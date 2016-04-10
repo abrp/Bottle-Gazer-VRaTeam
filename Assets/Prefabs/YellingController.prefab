@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Controllables:
   - {fileID: 0}
   - {fileID: 0}
-  m_MinStopGraceSeconds: 2
-  m_MaxStopGraceSeconds: 10
+  m_MinStopGraceSeconds: 6
+  m_MaxStopGraceSeconds: 12
 --- !u!114 &11491732
 MonoBehaviour:
   m_ObjectHideFlags: 1
