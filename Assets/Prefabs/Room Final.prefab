@@ -292,6 +292,8 @@ GameObject:
   - 33: {fileID: 3312088}
   - 23: {fileID: 2319012}
   - 64: {fileID: 6447056}
+  - 114: {fileID: 11412112}
+  - 114: {fileID: 11469598}
   m_Layer: 0
   m_Name: calender girl
   m_TagString: Untagged
@@ -2372,6 +2374,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11412112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 651eed96da75c4a32ab9a254267050f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11417996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2485,6 +2498,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4ee8f1d81ce55de47aba0ccb3cb399e1, type: 3}
   - {fileID: 8300000, guid: 2a42d03f4c0f8b74cb092769dd06ab92, type: 3}
   m_IsChanging: 0
+--- !u!114 &11469598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63b4adc357e004ca4af28496b27ef338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11490438
 MonoBehaviour:
   m_ObjectHideFlags: 1
