@@ -29,12 +29,16 @@ public class PushableItem : MonoBehaviour {
     m_Rigibody.AddForce(direction);
 
     ScoringManager.instance.PlayerRemovedItem(this.gameObject);
-    LevelManager.instance.BeltItemRemoved(this.gameObject.GetComponent<BeltItem>());
+		if (LevelManager.instance != null) {
+    		LevelManager.instance.BeltItemRemoved(this.gameObject.GetComponent<BeltItem>());
+		}
   }
 
   void OnCollisionEnter() {
-    var randomClipIndex = Random.Range(0, m_CollisionSounds.Length - 1);
-    var randomClip = m_CollisionSounds[randomClipIndex];
-    SoundManager.instance.Play(randomClip, this.transform.position, m_MinCollisionPitch, m_MaxCollisionPitch);
+	if (m_CollisionSounds.Length > 0) {
+  	  var randomClipIndex = Random.Range(0, m_CollisionSounds.Length - 1);
+  	  var randomClip = m_CollisionSounds[randomClipIndex];
+   	 SoundManager.instance.Play(randomClip, this.transform.position, m_MinCollisionPitch, m_MaxCollisionPitch);
+	}
   }
 }
