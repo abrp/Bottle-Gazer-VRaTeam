@@ -35,8 +35,10 @@ public class PushableItem : MonoBehaviour {
   }
 
   void OnCollisionEnter() {
-    var randomClipIndex = Random.Range(0, m_CollisionSounds.Length - 1);
-    var randomClip = m_CollisionSounds[randomClipIndex];
-    SoundManager.instance.Play(randomClip, this.transform.position, m_MinCollisionPitch, m_MaxCollisionPitch);
+	if (m_CollisionSounds.Length > 0) {
+  	  var randomClipIndex = Random.Range(0, m_CollisionSounds.Length - 1);
+  	  var randomClip = m_CollisionSounds[randomClipIndex];
+   	 SoundManager.instance.Play(randomClip, this.transform.position, m_MinCollisionPitch, m_MaxCollisionPitch);
+	}
   }
 }
