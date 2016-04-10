@@ -60,13 +60,16 @@ public class Spawner : MonoBehaviour, IMotionControllable {
         GameObject gameObject = Instantiate(m_Items[m_PermutationTable[--m_CurrentNumberOfItems]], transform.position, Quaternion.identity) as GameObject;
         m_NextSpawnTime = Time.time + (Random.Range(m_SpawnRate, m_SpawnRate * m_Spawnfactor));
         //m_CurrentNumberOfItems--;
-
-        LevelManager.instance.BeltItemAdded(gameObject.GetComponent<BeltItem>());
+		if(LevelManager.instance != null){
+       		LevelManager.instance.BeltItemAdded(gameObject.GetComponent<BeltItem>());
+		}
 
       } else {
-        LevelManager.instance.LastBeltItemAdded();
-      }
+		if (LevelManager.instance != null) {
+        	LevelManager.instance.LastBeltItemAdded();
 		}
+      }
+	}
 	}
 
   // Sets the object in motion
