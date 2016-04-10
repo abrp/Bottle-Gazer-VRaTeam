@@ -41,12 +41,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Items:
-  - {fileID: 174838, guid: 8c75aedc9e1849d448bd4b9bef020184, type: 2}
-  - {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
-  - {fileID: 148344, guid: 1ea885ff5ede42345b8b418118f958aa, type: 2}
-  - {fileID: 127422, guid: cf12293b0a69afc4c921947b719de56f, type: 2}
+  - {fileID: 174838, guid: a7554e9d576f80c48aed27f2d679de36, type: 2}
+  - {fileID: 128706, guid: 0a9890e0d2e1ff642aa765156d3f4d14, type: 2}
+  - {fileID: 148344, guid: 1babaa3fedcd1a243b3a77c187812494, type: 2}
+  - {fileID: 127422, guid: 5288fed36e9950e4a82dc06b5ce094c4, type: 2}
   m_SpawnRate: 2
-  m_NumberOfSpawnItems: 28000000050000000500000005000000
+  m_NumberOfSpawnItems: 0c000000060000000200000003000000
   m_Spawnfactor: 0.5
 --- !u!1001 &100100000
 Prefab:
