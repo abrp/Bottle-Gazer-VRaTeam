@@ -10,25 +10,31 @@ public class AnyKey : MonoBehaviour {
 	[SerializeField] private Color m_OverColor = new Color(1,0,0);
 	[SerializeField] private Color m_OutColor = new Color(0,1,0);
 
+	[SerializeField] private float m_DelayTime = 2f;
+	private float TimeForNextMessage = 0f;
+
 	[SerializeField] private string[] m_Strings;
 	private int m_currentString = 0;
 
+
 	private Renderer m_Renderer;
 	private bool m_GazeOver;
-
-	private void Start(){
-		m_Renderer = GetComponent<Renderer> ();
-
-		m_currentString = 0;
-		//TextTyper.instance.message = "Push";
-		//TextTyper.instance.GetComponent<Text>().text = "push";
-		//TextTyper.instance.TypeTextOnScreen (0);
-	}
 
 	private void Awake(){
 		if (m_InteractiveItem == null) {
 			m_InteractiveItem = gameObject.AddComponent<VRInteractiveItem> ();
 		}
+	}
+
+	private void Start(){
+		m_Renderer = GetComponent<Renderer> ();
+		m_currentString = 0;
+		TimeForNextMessage = Time.time + m_DelayTime;
+	}
+
+	private void Update() {
+		if (Time.time > TimeForNextMessage)
+			DisplayNexMessage ();
 	}
 
 	private void OnEnable(){
@@ -39,11 +45,16 @@ public class AnyKey : MonoBehaviour {
 		
 
 	private void HandleOnClick() {
+		DisplayNexMessage ();
+	}
+
+	private void DisplayNexMessage() {
 		m_currentString++;
 		m_currentString %= m_Strings.Length;
 		//TextTyper.instance.message = "Push";
 		TextTyper.instance.GetComponent<Text>().text = m_Strings[m_currentString];
-		TextTyper.instance.TypeTextOnScreen (0);	
+		TextTyper.instance.TypeTextOnScreen (0);
+		TimeForNextMessage += m_DelayTime;
 	}
 
 	private void HandleOver(){
