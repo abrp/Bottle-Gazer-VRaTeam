@@ -10,7 +10,7 @@ public class AnyKey : MonoBehaviour {
 	[SerializeField] private Color m_OverColor = new Color(1,0,0);
 	[SerializeField] private Color m_OutColor = new Color(0,1,0);
 
-	[SerializeField] private float m_DelayTime = 2f;
+	[SerializeField] private float m_DelayTime = 4f;
 	private float TimeForNextMessage = 0f;
 
 	[SerializeField] private string[] m_Strings;
