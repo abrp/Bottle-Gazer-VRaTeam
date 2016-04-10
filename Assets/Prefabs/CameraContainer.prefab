@@ -101,6 +101,7 @@ GameObject:
   - 114: {fileID: 11483588}
   - 114: {fileID: 11414514}
   - 114: {fileID: 11418610}
+  - 114: {fileID: 11473356}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -741,6 +742,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DoubleClickTime: 0.3
   m_SwipeWidth: 0.3
+--- !u!114 &11473356
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4975a6e437fc3b149a8cd508ce5bdd69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.15
+  intensity: 1.25
+  blurSize: 1
+  blurIterations: 1
+  blurType: 0
+  fastBloomShader: {fileID: 4800000, guid: 68a00c837b82e4c6d92e7da765dc5f1d, type: 3}
 --- !u!114 &11480260
 MonoBehaviour:
   m_ObjectHideFlags: 1
