@@ -43,8 +43,7 @@ MonoBehaviour:
   m_Items:
   - {fileID: 174838, guid: d71febd3d3db64749afb643728f8a9f2, type: 2}
   - {fileID: 128706, guid: fb485f70cc2e7e14b8ca550f770bb243, type: 2}
-  - {fileID: 159620, guid: 5cd5c1ebd4d2b6a458892970e01b9499, type: 2}
-  m_SpawnRate: 0.5
+  m_SpawnRate: 0.4
   m_NumberOfSpawnItems: 050000000500000002000000
   m_Spawnfactor: 0.5
 --- !u!1001 &100100000
