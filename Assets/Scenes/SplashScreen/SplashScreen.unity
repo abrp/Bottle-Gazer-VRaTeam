@@ -688,54 +688,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[0]
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[1]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[2]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[3]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[4]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[5]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[6]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[7]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[8]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[9]
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_LevelDelays.Array.data[10]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
-      propertyPath: m_EndGraceSeconds
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
   m_IsPrefabParent: 0

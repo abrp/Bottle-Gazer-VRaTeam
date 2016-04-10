@@ -154,10 +154,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.size
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 414450, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -189,30 +185,6 @@ Prefab:
     - target: {fileID: 414450, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
       propertyPath: m_RootOrder
       value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[0]
-      value: Push Any Key...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[2]
-      value: One\nKey for everything!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[3]
-      value: 'New job offer available: watch paint dry!'
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[4]
-      value: Push button to Flush Toilet!
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[1]
-      value: Welcome to The New iKeyAnyKey ...
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445756, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
-      propertyPath: m_Strings.Array.data[5]
-      value: Push button to order running Sushi!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f452bf4a1ad0e34fa2e47f758eeaa99, type: 2}
@@ -813,6 +785,48 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30e4821e433c76d4cb912bb6a035a848, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1429911102
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.03215427
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.000000044703484
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.09496154
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1447809077
 Prefab:
