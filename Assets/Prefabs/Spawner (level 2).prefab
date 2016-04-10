@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: 0.958, z: -1.5}
+  m_LocalPosition: {x: -1, y: 1, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -41,9 +41,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Items:
-  - {fileID: 174838, guid: 8c75aedc9e1849d448bd4b9bef020184, type: 2}
-  - {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
-  - {fileID: 148344, guid: 1ea885ff5ede42345b8b418118f958aa, type: 2}
+  - {fileID: 174838, guid: af608fabf4a669641abdc205dc15ea2c, type: 2}
+  - {fileID: 128706, guid: e0332315d8e684a43aa8b442a084f279, type: 2}
+  - {fileID: 148344, guid: f4a01707cae23314eaccb0a0824ca90f, type: 2}
   m_SpawnRate: 0.3
   m_NumberOfSpawnItems: 0a0000000500000001000000
   m_Spawnfactor: 0.5
