@@ -27,7 +27,8 @@ public class AnyKey : MonoBehaviour {
 
 	private void Start(){
 		m_Renderer = GetComponent<Renderer> ();
-		m_currentString = m_Strings.Length;
+		m_currentString = -1;
+		DisplayNexMessage ();
 		TimeForNextMessage = Time.time + m_DelayTime;
 	}
 
@@ -36,7 +37,7 @@ public class AnyKey : MonoBehaviour {
 			DisplayNexMessage ();
 	}
 
-	private void OnEnable() {
+	private void OnEnable(){
 		m_InteractiveItem.OnOver += HandleOver;
 		m_InteractiveItem.OnOut += HandleOut;
 		m_InteractiveItem.OnClick += HandleOnClick;
