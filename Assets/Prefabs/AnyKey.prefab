@@ -112,12 +112,23 @@ MonoBehaviour:
   m_OutColor: {r: 0, g: 1, b: 0, a: 1}
   m_DelayTime: 2
   m_Strings:
+<<<<<<< HEAD
+  - Your new job ia a "bottle gazer".
+  - We are watching you!
+  - Remove bad bottles!
+=======
   - Push Any Key...
   - Welcome to The New iKeyAnyKey ...
   - One Key for everything!
+>>>>>>> 77c0c46a689b7af68ce6b40616fa9f227ddb3d78
   - 'New job offer available: watch paint dry!'
   - Push button to Flush Toilet!
+  - The is no time for breaks.
   - Push button to order running Sushi!
+<<<<<<< HEAD
+  - Push Any Key to continue...
+=======
+>>>>>>> 77c0c46a689b7af68ce6b40616fa9f227ddb3d78
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
