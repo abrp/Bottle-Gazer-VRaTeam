@@ -110,7 +110,7 @@ MonoBehaviour:
   m_DebugState: 0
   m_OverColor: {r: 1, g: 0, b: 0, a: 1}
   m_OutColor: {r: 0, g: 1, b: 0, a: 1}
-  m_DelayTime: 2
+  m_DelayTime: 5
   m_Strings:
   - Your new job is a a "bottle gazer".
   - We are watching you - watching bottles!
