@@ -25,6 +25,8 @@ GameObject:
   - 4: {fileID: 453778}
   - 33: {fileID: 3347020}
   - 23: {fileID: 2367306}
+  - 64: {fileID: 6454376}
+  - 64: {fileID: 6465422}
   m_Layer: 0
   m_Name: conveyer hole
   m_TagString: Untagged
@@ -38,10 +40,10 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141718}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000016292068}
+  m_LocalPosition: {x: 0.7106652, y: -0.121254444, z: 0.6044725}
+  m_LocalScale: {x: 1, y: 1.6136018, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
   - {fileID: 453778}
   m_Father: {fileID: 0}
@@ -91,6 +93,30 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166518}
+  m_Mesh: {fileID: 4300000, guid: 268587806314e3c4db07c698c7a3c592, type: 3}
+--- !u!64 &6454376
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 268587806314e3c4db07c698c7a3c592, type: 3}
+--- !u!64 &6465422
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 268587806314e3c4db07c698c7a3c592, type: 3}
 --- !u!1001 &100100000
 Prefab:

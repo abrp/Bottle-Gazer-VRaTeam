@@ -70,7 +70,7 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: 8f96dffaf14df94459b1438898fb4454, type: 3}
           m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
+          m_Offset: {x: 1, y: 1}
       data:
         first:
           name: _MetallicGlossMap
@@ -118,7 +118,7 @@ Material:
       data:
         first:
           name: _UVSec
-        second: 0
+        second: 1
       data:
         first:
           name: _Mode

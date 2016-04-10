@@ -28,7 +28,7 @@ public class Radio : MonoBehaviour {
 		m_Renderer = GetComponent<Renderer> ();
 		m_AudioScource = GetComponent<AudioSource> ();
 
-		currentTrack = Random.Range (0, m_AudioClips.Length);
+		currentTrack = 1;
 		m_AudioScource.clip = m_AudioClips[currentTrack];
 		m_AudioScource.time = Random.Range(0f, m_AudioClips[currentTrack].length);
 		m_AudioScource.Play ();
