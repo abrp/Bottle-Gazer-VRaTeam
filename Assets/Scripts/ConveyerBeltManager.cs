@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using VRStandardAssets.Utils;
 
 [RequireComponent(typeof(MicrophoneInput))]
 public class ConveyerBeltManager : MonoBehaviour {
@@ -8,6 +9,7 @@ public class ConveyerBeltManager : MonoBehaviour {
   [SerializeField] private GameObject[] m_Controllables;
   [SerializeField, Range(0, 30)] private float m_MinStopGraceSeconds = 2f;
   [SerializeField, Range(0, 30)] private float m_MaxStopGraceSeconds = 10f;
+  [SerializeField] private GameObject m_TriggerObject;
 
   private IList<IMotionControllable> m_MotionControllables;
   private MicrophoneInput m_MicrophoneInput;
@@ -29,6 +31,11 @@ public class ConveyerBeltManager : MonoBehaviour {
     m_MicrophoneInput.OnMicActivated += this.StartBelt;
     m_MicrophoneInput.OnMicDeactivated += this.StopBelt;
 
+    // Hook up to trigger object if one is given
+    if(m_TriggerObject != null) {
+      m_TriggerObject.GetComponent<VRInteractiveItem>().OnClick += this.StartBelt;
+    }
+
     // Start with a stopped belt
     m_StoppingBelt = true;
     this.CommitStopBelt();
@@ -45,7 +52,6 @@ public class ConveyerBeltManager : MonoBehaviour {
     if(!m_StoppingBelt) {
       m_StoppingBelt = true;
       var graceSeconds = Random.Range(m_MinStopGraceSeconds, m_MaxStopGraceSeconds);
-      Debug.Log("StopBelt. graceSeconds = " + graceSeconds);
       Invoke("CommitStopBelt", graceSeconds);
     }
   }
