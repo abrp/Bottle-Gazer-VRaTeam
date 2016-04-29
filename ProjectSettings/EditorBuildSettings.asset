@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Intermissions/Day5Intermission.unity
   - enabled: 1
     path: Assets/Scenes/Levels/Level 5 Henry!.unity
+  - enabled: 1
+    path: Assets/Scenes/Intermissions/GameOver.unity
