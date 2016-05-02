@@ -8,6 +8,7 @@ public class PushableItem : MonoBehaviour {
   private Camera m_sceneCamera;
   private Rigidbody m_Rigibody;
   private VRInteractiveItem m_InteractiveItem;
+  private LevelManager m_LevelManager;
 
   [SerializeField] private float m_Force = 100f;
   [SerializeField] private AudioClip[] m_CollisionSounds;
@@ -20,6 +21,7 @@ public class PushableItem : MonoBehaviour {
     m_Rigibody = this.GetComponent<Rigidbody>();
     m_InteractiveItem = this.GetComponent<VRInteractiveItem>();
     m_InteractiveItem.OnClick += this.Push;
+    m_LevelManager = GameObject.FindObjectOfType<LevelManager>();
 	}
     
   void Push() {    
@@ -29,8 +31,8 @@ public class PushableItem : MonoBehaviour {
     m_Rigibody.AddForce(direction);
 
     ScoringManager.instance.PlayerRemovedItem(this.gameObject);
-		if (LevelManager.instance != null) {
-    		LevelManager.instance.BeltItemRemoved(this.gameObject.GetComponent<BeltItem>());
+    if (m_LevelManager != null) {
+      m_LevelManager.BeltItemRemoved(this.gameObject.GetComponent<BeltItem>());
 		}
   }
 

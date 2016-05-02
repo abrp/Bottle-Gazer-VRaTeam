@@ -7,12 +7,15 @@ public class Spawner : MonoBehaviour, IMotionControllable {
 	[SerializeField] private float m_SpawnRate = 0.5f;
 	[SerializeField] private int[] m_NumberOfSpawnItems; // size
 	[SerializeField] private float m_Spawnfactor = 0.5f;
-	private float m_NextSpawnTime;
+	
+  private float m_NextSpawnTime;
 	private int[] m_PermutationTable;
 	private int m_CurrentNumberOfItems = 0;	// size 20
   private bool m_IsSpawning = true;
+  private LevelManager m_LevelManager;
 
 	void Start () {
+    m_LevelManager = GameObject.FindObjectOfType<LevelManager>();
 		SetupPermutationTable ();
 	}
 
@@ -60,13 +63,13 @@ public class Spawner : MonoBehaviour, IMotionControllable {
         GameObject gameObject = Instantiate(m_Items[m_PermutationTable[--m_CurrentNumberOfItems]], transform.position, Quaternion.identity) as GameObject;
         m_NextSpawnTime = Time.time + (Random.Range(m_SpawnRate, m_SpawnRate * m_Spawnfactor));
         //m_CurrentNumberOfItems--;
-		if(LevelManager.instance != null){
-       		LevelManager.instance.BeltItemAdded(gameObject.GetComponent<BeltItem>());
+        if(m_LevelManager != null){
+          m_LevelManager.BeltItemAdded(gameObject.GetComponent<BeltItem>());
 		}
 
       } else {
-		if (LevelManager.instance != null) {
-        	LevelManager.instance.LastBeltItemAdded();
+        if (m_LevelManager != null) {
+          m_LevelManager.LastBeltItemAdded();
 		}
       }
 	}
