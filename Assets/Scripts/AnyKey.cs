@@ -6,18 +6,13 @@ using UnityEngine.UI;
 public class AnyKey : MonoBehaviour {
 	[SerializeField] private VRInteractiveItem m_InteractiveItem;
 
-	[SerializeField] private bool m_DebugState= false;
-	[SerializeField] private Color m_OverColor = new Color(1,0,0);
-	[SerializeField] private Color m_OutColor = new Color(0,1,0);
-
 	[SerializeField] private float m_DelayTime = 4f;
-	private float TimeForNextMessage = 0f;
+  [SerializeField] private string[] m_Strings;
 
-	[SerializeField] private string[] m_Strings;
+  private float TimeForNextMessage = 0f;
 	private int m_currentString = 0;
 
-	private Renderer m_Renderer;
-	private bool m_GazeOver;
+  private TextTyper m_TextTyper;
 
 	private void Awake(){
 		if (m_InteractiveItem == null) {
@@ -26,7 +21,7 @@ public class AnyKey : MonoBehaviour {
 	}
 
 	private void Start(){
-		m_Renderer = GetComponent<Renderer> ();
+    m_TextTyper = GameObject.FindObjectOfType<TextTyper>();
 		m_currentString = -1;
 		DisplayNexMessage ();
 		TimeForNextMessage = Time.time + m_DelayTime;
@@ -38,8 +33,6 @@ public class AnyKey : MonoBehaviour {
 	}
 
 	private void OnEnable(){
-		m_InteractiveItem.OnOver += HandleOver;
-		m_InteractiveItem.OnOut += HandleOut;
 		m_InteractiveItem.OnClick += HandleOnClick;
 	}
 		
@@ -51,21 +44,8 @@ public class AnyKey : MonoBehaviour {
 	private void DisplayNexMessage() {
 		m_currentString++;
 		m_currentString %= m_Strings.Length;
-		//TextTyper.instance.message = "Push";
-		TextTyper.instance.GetComponent<Text>().text = m_Strings[m_currentString];
-		TextTyper.instance.TypeTextOnScreen (0);
+		m_TextTyper.GetComponent<Text>().text = m_Strings[m_currentString];
+    m_TextTyper.TypeTextOnScreen (0);
 		TimeForNextMessage += m_DelayTime;
-	}
-
-	private void HandleOver(){
-		if(m_DebugState)
-			m_Renderer.material.color = m_OverColor;
-		m_GazeOver = true;
-	}
-
-	private void HandleOut(){
-		if(m_DebugState)
-			m_Renderer.material.color = m_OutColor;
-		m_GazeOver = false;
 	}
 }
