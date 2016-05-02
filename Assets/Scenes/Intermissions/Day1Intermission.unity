@@ -240,7 +240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11434620, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
       propertyPath: m_LevelDelay
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a2b5c8766604a4ba08bd1ac459df61, type: 2}
@@ -287,22 +287,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38217920b02664041ac920dae0713eb2, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1081532113 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 195156, guid: ca1db24926942d54e80f199cb23e6802, type: 2}
-  m_PrefabInternal: {fileID: 2063314726}
---- !u!114 &1081532119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1081532113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c633d69fd5f7a14f8639ee0c3378269, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Time: 5
 --- !u!1 &1804034391
 GameObject:
   m_ObjectHideFlags: 0
