@@ -293,8 +293,6 @@ GameObject:
   - 64: {fileID: 6447056}
   - 114: {fileID: 11412112}
   - 114: {fileID: 11469598}
-  - 114: {fileID: 11496792}
-  - 114: {fileID: 11472342}
   m_Layer: 0
   m_Name: calender girl
   m_TagString: Untagged
@@ -2361,17 +2359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b4adc357e004ca4af28496b27ef338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11472342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b4adc357e004ca4af28496b27ef338, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11490438
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2437,17 +2424,6 @@ MonoBehaviour:
   m_OffColor: {r: 0.12068967, g: 0, b: 0, a: 0}
   delay: 0.1
   audioClip: {fileID: 8300000, guid: 09f7e7c6438760748b3903c729d777dd, type: 3}
---- !u!114 &11496792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 165692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 651eed96da75c4a32ab9a254267050f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &22224518
 CanvasRenderer:
   m_ObjectHideFlags: 1
