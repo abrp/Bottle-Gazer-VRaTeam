@@ -9,7 +9,6 @@ public class AnyKey : MonoBehaviour {
 	[SerializeField] private float m_DelayTime = 4f;
   [SerializeField] private string[] m_Strings;
 
-  private float TimeForNextMessage = 0f;
 	private int m_currentString = 0;
 
   private TextTyper m_TextTyper;
@@ -24,12 +23,6 @@ public class AnyKey : MonoBehaviour {
     m_TextTyper = GameObject.FindObjectOfType<TextTyper>();
 		m_currentString = -1;
 		DisplayNexMessage ();
-		TimeForNextMessage = Time.time + m_DelayTime;
-	}
-
-	private void Update() {
-		if (Time.time > TimeForNextMessage)
-			DisplayNexMessage ();
 	}
 
 	private void OnEnable(){
@@ -38,14 +31,17 @@ public class AnyKey : MonoBehaviour {
 		
 
 	private void HandleOnClick() {
+    CancelInvoke("DisplayNexMessage");
 		DisplayNexMessage ();
 	}
 
 	private void DisplayNexMessage() {
-		m_currentString++;
-		m_currentString %= m_Strings.Length;
-		m_TextTyper.GetComponent<Text>().text = m_Strings[m_currentString];
-    m_TextTyper.TypeTextOnScreen (0);
-		TimeForNextMessage += m_DelayTime;
+    if(!m_TextTyper.IsTyping()) {
+      m_currentString++;
+      m_currentString %= m_Strings.Length;
+      m_TextTyper.GetComponent<Text>().text = m_Strings[m_currentString];
+      m_TextTyper.TypeTextOnScreen(0);      
+    }
+    Invoke("DisplayNexMessage", m_DelayTime);
 	}
 }

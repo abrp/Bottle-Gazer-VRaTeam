@@ -17,20 +17,29 @@ public class TextTyper : MonoBehaviour {
 	public Text textComp;
 	public string message;
 
+  private bool m_IsTyping = false;
+
 	void Start(){
 		audioSource = GetComponent<AudioSource> ();
 		TypeTextOnScreen (0);
 	}
 
-	void Update(){
-	}
+  public bool IsTyping() {
+    return m_IsTyping;
+  }
 
 	// Use this for initialization
-	public void TypeTextOnScreen (float delay) {
-		textComp = GetComponent<Text>();
-		message = textComp.text;
-		textComp.text = "";
-		StartCoroutine(TypeText (message, delay));
+	public bool TypeTextOnScreen (float delay) {
+    if(!m_IsTyping) {
+      m_IsTyping = true;
+      textComp = GetComponent<Text>();
+      message = textComp.text;
+      textComp.text = "";
+      StartCoroutine(TypeText(message, delay));
+      return true;
+    } else {
+      return false;
+    }
 	}
 	
 	IEnumerator TypeText (string message, float delay) {
@@ -55,6 +64,7 @@ public class TextTyper : MonoBehaviour {
 			yield return new WaitForSeconds (letterPause);
 		}
 		yield return new WaitForSeconds (0.5f);
+    m_IsTyping = false;
 	}
 }
 
