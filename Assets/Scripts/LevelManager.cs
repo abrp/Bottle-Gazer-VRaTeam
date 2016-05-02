@@ -36,6 +36,12 @@ public class LevelManager : MonoBehaviour {
   }
 
   public void LoadNextLevel() {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    var currentIndex = SceneManager.GetActiveScene().buildIndex;
+    if(currentIndex >= (SceneManager.sceneCountInBuildSettings - 1)) {
+      // Last scene, restart
+      SceneManager.LoadScene(0);
+    } else {
+      SceneManager.LoadScene(currentIndex + 1);
+    }
   }
 }
