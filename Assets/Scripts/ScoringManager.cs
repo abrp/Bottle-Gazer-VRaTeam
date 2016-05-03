@@ -9,8 +9,14 @@ public class ScoringManager : MonoBehaviour {
   private Text m_ScoreText;
 	[SerializeField] private LightBulb m_RedBulb;
 	[SerializeField] private LightBulb m_GreenBulb;
+  [SerializeField] private Destroyer m_Destroyer;
 
   [SerializeField] private int m_InitialScore = 1000;
+
+  [SerializeField] private AudioClip m_PlayerRemovedCorrectItem;
+  [SerializeField] private AudioClip m_PlayerRemovedWrongItem;
+  [SerializeField] private AudioClip m_CorrectItemReachedEndOfBelt;
+  [SerializeField] private AudioClip m_WrongItemReachedEndOfBelt;
 
   public static ScoringManager instance = null; //Static instance of ScoringManager which allows it to be accessed by any other script.
   public event Action OnScoreChanged; // Called when the score changes
@@ -48,9 +54,9 @@ public class ScoringManager : MonoBehaviour {
     UpdateScoreText();
 
 		if (score > 0) {
-			m_GreenBulb.Play ();
+			m_GreenBulb.Flash ();
 		} else {
-			m_RedBulb.Play ();
+			m_RedBulb.Flash ();
 		}
 
     if (OnScoreChanged != null)
@@ -66,7 +72,15 @@ public class ScoringManager : MonoBehaviour {
     IScoringItem scoringItem = itemGameObject.GetComponent<IScoringItem>();
 
     if(scoringItem != null) {
-      ApplyScore(scoringItem.GetPlayerRemovalScore());
+      var score = scoringItem.GetPlayerRemovalScore();
+      ApplyScore(score);
+
+      // Sound plays at the score board
+      if(score > 0) {
+        SoundManager.instance.Play(m_PlayerRemovedCorrectItem, m_GreenBulb.transform.position, 0.9f, 1f);
+      } else {
+        SoundManager.instance.Play(m_PlayerRemovedWrongItem, m_RedBulb.transform.position, 0.9f, 1f);      
+      }
     }
   }
 
@@ -75,7 +89,15 @@ public class ScoringManager : MonoBehaviour {
     IScoringItem scoringItem = itemGameObject.GetComponent<IScoringItem>();
 
     if(scoringItem != null) {
-      ApplyScore(scoringItem.GetEndOfBeltScore());
+      var score = scoringItem.GetEndOfBeltScore();
+      ApplyScore(score);
+
+      // Sound plays at end of belt
+      if(score > 0) {
+        SoundManager.instance.Play(m_CorrectItemReachedEndOfBelt, m_Destroyer.transform.position, 0.9f, 1f);
+      } else {
+        SoundManager.instance.Play(m_WrongItemReachedEndOfBelt, m_Destroyer.transform.position, 0.9f, 1f);      
+      }
     }
   }
 

@@ -2186,7 +2186,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RedBulb: {fileID: 11496466}
   m_GreenBulb: {fileID: 11491750}
+  m_Destroyer: {fileID: 11459840, guid: b7691d35cd2165144b1b661f0abcfc27, type: 2}
   m_InitialScore: 0
+  m_PlayerRemovedCorrectItem: {fileID: 8300000, guid: a2d1a60f4621b464996cb0fad192ce9c,
+    type: 3}
+  m_PlayerRemovedWrongItem: {fileID: 8300000, guid: 09f7e7c6438760748b3903c729d777dd,
+    type: 3}
+  m_CorrectItemReachedEndOfBelt: {fileID: 8300000, guid: b925341fec95d43d4b3efa7a32516d25,
+    type: 3}
+  m_WrongItemReachedEndOfBelt: {fileID: 8300000, guid: 09f7e7c6438760748b3903c729d777dd,
+    type: 3}
 --- !u!114 &11407914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2408,7 +2417,6 @@ MonoBehaviour:
   m_OnColor: {r: 0.27450982, g: 1, b: 0.9333334, a: 0}
   m_OffColor: {r: 0.046388406, g: 0.19117647, b: 0.17787164, a: 0}
   delay: 0.1
-  audioClip: {fileID: 8300000, guid: a2d1a60f4621b464996cb0fad192ce9c, type: 3}
 --- !u!114 &11496466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2423,7 +2431,6 @@ MonoBehaviour:
   m_OnColor: {r: 1, g: 0, b: 0, a: 0}
   m_OffColor: {r: 0.12068967, g: 0, b: 0, a: 0}
   delay: 0.1
-  audioClip: {fileID: 8300000, guid: 09f7e7c6438760748b3903c729d777dd, type: 3}
 --- !u!222 &22224518
 CanvasRenderer:
   m_ObjectHideFlags: 1

@@ -7,8 +7,8 @@ public class LightBulb : MonoBehaviour {
 	[SerializeField] private Color m_OffColor;
 
 	[SerializeField] private float delay = 1f;
-	[SerializeField] private AudioClip audioClip;
-	private Renderer m_Renderer;
+
+  private Renderer m_Renderer;
 	private bool m_IsPlaying = false;
 
 	void Start () {
@@ -17,8 +17,7 @@ public class LightBulb : MonoBehaviour {
 		m_Renderer.material.SetColor("_EmissionColor",m_OffColor);
 	}
 
-	public void Play(){
-		SoundManager.instance.Play (audioClip, transform.position, 0.9f, 1f);
+	public void Flash(){
 		if (!m_IsPlaying) {
 			StartCoroutine (TurnOn ());
 		}
