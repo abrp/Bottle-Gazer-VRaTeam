@@ -98,10 +98,10 @@ GameObject:
   - 114: {fileID: 11436878}
   - 114: {fileID: 11480260}
   - 114: {fileID: 11462848}
-  - 114: {fileID: 11483588}
   - 114: {fileID: 11414514}
   - 114: {fileID: 11418610}
   - 114: {fileID: 11473356}
+  - 114: {fileID: 11458718}
   m_Layer: 0
   m_Name: CenterEyeAnchor
   m_TagString: MainCamera
@@ -729,6 +729,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_reticle: {fileID: 11466938, guid: a4bb5533ad2e7fe43b5f16e7e391cb09, type: 2}
+--- !u!114 &11458718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afcf575f4a68de4db434c7b7233c451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTimer: {fileID: 0}
+  cursorTimerColor: {r: 0, g: 0.643, b: 1, a: 1}
+  fixedDepth: 3
 --- !u!114 &11462848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -779,17 +793,6 @@ MonoBehaviour:
   m_DebugRayLength: 5
   m_DebugRayDuration: 1
   m_RayLength: 500
---- !u!114 &11483588
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149892}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 382cd804c20c848f5a5be90e8a8c3e6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11494236
 MonoBehaviour:
   m_ObjectHideFlags: 1
