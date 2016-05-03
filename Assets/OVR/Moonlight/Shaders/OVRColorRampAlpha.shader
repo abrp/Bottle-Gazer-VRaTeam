@@ -12,6 +12,7 @@ Category {
 	AlphaTest Greater .01
 	ColorMask RGB
 	Cull Off Lighting Off ZWrite Off Fog { Color (0,0,0,0) }
+  Ztest Always
 	
     SubShader {
         Pass {

@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2afcf575f4a68de4db434c7b7233c451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorTimer: {fileID: 0}
+  cursorTimer: {fileID: 100000, guid: 5a7682c244a150b49965c007720bdbb7, type: 2}
   cursorTimerColor: {r: 0, g: 0.643, b: 1, a: 1}
   fixedDepth: 3
 --- !u!114 &11462848

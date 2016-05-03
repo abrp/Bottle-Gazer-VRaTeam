@@ -12,6 +12,7 @@ GameObject:
   - 92: {fileID: 9211526}
   - 124: {fileID: 12403716}
   - 81: {fileID: 8188512}
+  - 114: {fileID: 11439068}
   m_Layer: 0
   m_Name: IntermissionCamera
   m_TagString: MainCamera
@@ -80,6 +81,20 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195156}
   m_Enabled: 1
+--- !u!114 &11439068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afcf575f4a68de4db434c7b7233c451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTimer: {fileID: 100000, guid: 5a7682c244a150b49965c007720bdbb7, type: 2}
+  cursorTimerColor: {r: 0, g: 0.643, b: 1, a: 1}
+  fixedDepth: 3
 --- !u!124 &12403716
 Behaviour:
   m_ObjectHideFlags: 1
