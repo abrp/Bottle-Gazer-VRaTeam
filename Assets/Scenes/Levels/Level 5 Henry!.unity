@@ -1567,6 +1567,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426422, guid: b988dc95e6d3ef04bb1ba8452d4847ad, type: 2}
   m_PrefabInternal: {fileID: 1508433038}
+--- !u!1 &1625466456 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 174784, guid: 65dd2499b00fa044d9dfd4cee93b35c0, type: 2}
+  m_PrefabInternal: {fileID: 1625711570}
 --- !u!1001 &1625711570
 Prefab:
   m_ObjectHideFlags: 0
@@ -1609,6 +1613,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65dd2499b00fa044d9dfd4cee93b35c0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1759357935 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 150918, guid: 65dd2499b00fa044d9dfd4cee93b35c0, type: 2}
+  m_PrefabInternal: {fileID: 1625711570}
 --- !u!1 &1775900657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,7 +1644,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24389546, guid: 010b532b8d7be6a459e2cae8cefff9f6,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 0cd89f69711c33a479bb5122d29b5cdd, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1964,6 +1972,18 @@ Prefab:
       propertyPath: m_TriggerObject
       value: 
       objectReference: {fileID: 1930890358}
+    - target: {fileID: 11464118, guid: b051d92e846ec4f99adfde41d5a9621e, type: 2}
+      propertyPath: m_StartedSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1759357935}
+    - target: {fileID: 11464118, guid: b051d92e846ec4f99adfde41d5a9621e, type: 2}
+      propertyPath: m_StartedSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 1625466456}
+    - target: {fileID: 11464118, guid: b051d92e846ec4f99adfde41d5a9621e, type: 2}
+      propertyPath: m_StoppedSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 1775900657}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b051d92e846ec4f99adfde41d5a9621e, type: 2}
   m_IsPrefabParent: 0
