@@ -9,11 +9,14 @@ namespace VRStandardAssets.Utils
     public class VRFPSCounter : MonoBehaviour
     {
         private float m_DeltaTime;                      // This is the smoothed out time between frames.
-        private Text m_Text;                            // Reference to the component that displays the fps.
-
+        private Text m_Text;                            // Reference to the component that displays the 
+        private bool m_IsEnabled = false;
 
         private const float k_SmoothingCoef = 0.1f;     // This is used to smooth out the displayed fps.
 
+        public void Toogle() {
+            m_IsEnabled = !m_IsEnabled;
+        }
 
         private void Start ()
         {
@@ -23,19 +26,21 @@ namespace VRStandardAssets.Utils
 
         private void Update ()
         {
-            // This line has the effect of smoothing out delta time.
-            m_DeltaTime += (Time.deltaTime - m_DeltaTime) * k_SmoothingCoef;
-            
-            // The frames per second is the number of frames this frame (one) divided by the time for this frame (delta time).
-            float fps = 1.0f / m_DeltaTime;
+            if(m_IsEnabled) {
+                // This line has the effect of smoothing out delta time.
+                m_DeltaTime += (Time.deltaTime - m_DeltaTime) * k_SmoothingCoef;
 
-            // Set the displayed value of the fps to be an integer.
-            m_Text.text = Mathf.FloorToInt (fps) + " fps";
+                // The frames per second is the number of frames this frame (one) divided by the time for this frame (delta time).
+                float fps = 1.0f / m_DeltaTime;
 
-            // Turn the fps display on and off using the F key.
-            if (Input.GetKeyDown (KeyCode.F))
-            {
-                m_Text.enabled = !m_Text.enabled;
+                // Set the displayed value of the fps to be an integer.
+                m_Text.text = Mathf.FloorToInt (fps) + " fps";
+
+                // Turn the fps display on and off using the F key.
+                if (Input.GetKeyDown (KeyCode.F))
+                {
+                  m_Text.enabled = !m_Text.enabled;
+                }
             }
         }
     }
