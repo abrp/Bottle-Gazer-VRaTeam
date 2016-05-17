@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: GreenLedOn
+  m_Shader: {fileID: 12, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DecalTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Detail
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 2800000, guid: cb85a58642a684dc4b89697d39cc55d8, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Bump
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Thickness
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Spec_Gloss_Reflec_Masks
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Reflection
+        second: 0.30357143
+      data:
+        first:
+          name: _Scale
+        second: 0.5
+      data:
+        first:
+          name: _Cutoff
+        second: 0.64285713
+      data:
+        first:
+          name: _Shininess
+        second: 0.011675137
+      data:
+        first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
+          name: _Parallax
+        second: 0.026696429
+      data:
+        first:
+          name: _Emission
+        second: 1
+      data:
+        first:
+          name: _InvFade
+        second: 2.2280357
+      data:
+        first:
+          name: _EmissionLM
+        second: 0
+      data:
+        first:
+          name: _RimPower
+        second: 1
+      data:
+        first:
+          name: _Outline
+        second: 0.013392857
+      data:
+        first:
+          name: _GlowAmount
+        second: 0.36214286
+      data:
+        first:
+          name: _RimSaturation
+        second: 1
+      data:
+        first:
+          name: _GlowThreshold
+        second: 0
+      data:
+        first:
+          name: _Gloss
+        second: 0.21428572
+      data:
+        first:
+          name: _FrezPow
+        second: 0.4642857
+      data:
+        first:
+          name: _FrezFalloff
+        second: 1.6071428
+      data:
+        first:
+          name: _EdgeAlpha
+        second: 0.35714287
+      data:
+        first:
+          name: _Metalics
+        second: 0.44642857
+      data:
+        first:
+          name: _Power
+        second: 1
+      data:
+        first:
+          name: _Distortion
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 0.1672789, g: 0.6784314, b: 0.01596309, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.16645905, g: 0.5176471, b: 0.22710986, a: 1}
+      data:
+        first:
+          name: _Emission
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.9543298, g: 0.9607843, b: 0.94948095, a: 0.5019608}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 0.5}
+      data:
+        first:
+          name: _ColorTint
+        second: {r: 0.32219115, g: 0.58431375, b: 0.027497116, a: 1}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 0.91665995, g: 0.99215686, b: 0.36184543, a: 1}
+      data:
+        first:
+          name: _OutlineColor
+        second: {r: 0.043137256, g: 0.025713189, b: 0.032411013, a: 0.8901961}
+      data:
+        first:
+          name: _GlowColor
+        second: {r: 1, g: 1, b: 0, a: 0}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+      data:
+        first:
+          name: _SubColor
+        second: {r: 1, g: 1, b: 1, a: 1}
