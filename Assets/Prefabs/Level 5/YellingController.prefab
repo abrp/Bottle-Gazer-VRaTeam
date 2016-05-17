@@ -122,6 +122,12 @@ MonoBehaviour:
   - {fileID: 0}
   m_MinStopGraceSeconds: 6
   m_MaxStopGraceSeconds: 12
+  m_TriggerObject: {fileID: 0}
+  m_StartedSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  m_StoppedSounds:
+  - {fileID: 0}
 --- !u!114 &11491732
 MonoBehaviour:
   m_ObjectHideFlags: 1

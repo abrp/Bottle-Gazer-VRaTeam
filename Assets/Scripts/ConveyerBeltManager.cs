@@ -10,10 +10,11 @@ public class ConveyerBeltManager : MonoBehaviour {
   [SerializeField, Range(0, 30)] private float m_MinStopGraceSeconds = 2f;
   [SerializeField, Range(0, 30)] private float m_MaxStopGraceSeconds = 10f;
   [SerializeField] private GameObject m_TriggerObject;
+  [SerializeField] private GameObject[] m_StartedSounds;
+  [SerializeField] private GameObject[] m_StoppedSounds;
 
   private IList<IMotionControllable> m_MotionControllables;
   private MicrophoneInput m_MicrophoneInput;
-  private bool m_StoppingBelt = false;
 
 	// Use this for initialization
 	void Start () {      
@@ -29,40 +30,35 @@ public class ConveyerBeltManager : MonoBehaviour {
     // Hook up to microphone
     m_MicrophoneInput = this.GetComponent<MicrophoneInput>();
     m_MicrophoneInput.OnMicActivated += this.StartBelt;
-    m_MicrophoneInput.OnMicDeactivated += this.StopBelt;
 
     // Hook up to trigger object if one is given
     if(m_TriggerObject != null) {
       m_TriggerObject.GetComponent<VRInteractiveItem>().OnClick += this.StartBelt;
     }
 
-    // Start with a stopped belt
-    m_StoppingBelt = true;
-    this.CommitStopBelt();
+    // Belt starts running, stop after random time when Henry falls asleep
+    StopBeltAtRandomTime();
 	}
 
   private void StartBelt() {
-    m_StoppingBelt = false;
     foreach(var controllable in CurrentMotionControllables()) {
       controllable.StartMotion();
     }
+    ChangeSounds(true);
+    StopBeltAtRandomTime();
   }
 
-  private void StopBelt() {
-    if(!m_StoppingBelt) {
-      m_StoppingBelt = true;
-      var graceSeconds = Random.Range(m_MinStopGraceSeconds, m_MaxStopGraceSeconds);
-      Invoke("CommitStopBelt", graceSeconds);
-    }
+  private void StopBeltAtRandomTime() {
+    CancelInvoke("StopBeltNow");
+    var graceSeconds = Random.Range(m_MinStopGraceSeconds, m_MaxStopGraceSeconds);
+    Invoke("StopBeltNow", graceSeconds);
   }
 
-  private void CommitStopBelt() {
-    if(m_StoppingBelt) {
-      foreach(var controllable in CurrentMotionControllables()) {
-        controllable.StopMotion();
-      }  
-      m_StoppingBelt = false;
+  private void StopBeltNow() {
+    foreach(var controllable in CurrentMotionControllables()) {
+      controllable.StopMotion();
     }
+    ChangeSounds(false);
   }
 
   private IList<IMotionControllable> CurrentMotionControllables() {
@@ -80,6 +76,26 @@ public class ConveyerBeltManager : MonoBehaviour {
     }
 
     return listCopy;
+  }
+
+  private void ChangeSounds(bool beltIsStarted) {
+    foreach(var instance in m_StoppedSounds) {
+      var source = instance.GetComponent<AudioSource>();
+      if(beltIsStarted) {
+        source.Stop();
+      } else {
+        source.Play();
+      }
+    }
+
+    foreach(var instance in m_StartedSounds) {
+      var source = instance.GetComponent<AudioSource>();
+      if(beltIsStarted) {
+        source.Play();
+      } else {
+        source.Stop();
+      }
+    }
   }
 
 }

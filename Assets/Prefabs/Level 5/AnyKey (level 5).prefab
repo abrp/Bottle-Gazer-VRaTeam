@@ -107,21 +107,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractiveItem: {fileID: 0}
-  m_DebugState: 0
-  m_OverColor: {r: 1, g: 0, b: 0, a: 1}
-  m_OutColor: {r: 0, g: 1, b: 0, a: 1}
   m_DelayTime: 2
   m_Strings:
-  - Your new job is a a "bottle gazer".
-  - We are watching you - watching bottles!
-  - Remove bad bottles!
-  - Push Any Key...
-  - Welcome to The New iKeyAnyKey ...
-  - One Key for everything!
-  - 'New job offer available: watch paint dry!'
-  - Push button to Flush Toilet!
+  - Team work is the key to success.
+  - Be nice to new colleagues.
+  - You were also new to this once.
+  - You and Henry are a team now.
+  - Stay alert to keep things moving.
+  - Help your new colleague stay awake.
+  - You may need to shout at Henry.
   - The is no time for breaks.
-  - Push button to order running Sushi!
+  - Things not moving? Try shouting!
+  - Shouting is the key success.
   - Push Any Key to continue...
 --- !u!1001 &100100000
 Prefab:
