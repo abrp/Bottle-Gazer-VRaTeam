@@ -41,6 +41,7 @@ public class LevelManager : MonoBehaviour {
       // Last scene, restart
       SceneManager.LoadScene(0);
     } else {
+      Debug.Log("LevelManager now loading scene " + (currentIndex + 1));
       SceneManager.LoadScene(currentIndex + 1);
     }
   }

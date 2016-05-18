@@ -969,3 +969,20 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b7691d35cd2165144b1b661f0abcfc27, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2127246929 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128706, guid: 2f560c12b3dedca4398e536262a2b469, type: 2}
+  m_PrefabInternal: {fileID: 219189923}
+--- !u!114 &2127246930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2127246929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a3af33dc582456e967be0b73352a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CompletionText: Well done! You are hired. Get to work.
+  m_WaitAfterCompletion: 5
